@@ -19,4 +19,182 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section id="banner">
+            <h3>Seu novo melhor amigo está esperando por você!</h3>
+
+            <p>Conheça os gatos que estão na MiauDota e descubra com quem a sua rotina combina. Adotar é um ato de amor, a gente caminha com você em cada passo.</p>
+
+            <a href="#gatos"><button>Ver gatos disponíveis</button></a>
+        </section>
+
+        <section id="antes-adotar">
+            <h3>Adotar é para vida toda</h3>
+
+            <p>Um gato pode viver de 15 a 20 anos. Nesse tempo, ele vai estar com você nos dias bons e nos difíceis, então a decisão merece carinho e planejamento. Não queremos que ninguém adote por impulso, e é por isso que conversamos com cada família antes de entregar um gatinho.</p>
+            <label for="antes-adotar">"Faça uma pausa e pergunte a si mesmo(a)":</label>
+
+            <p><input type="checkbox" id="antes-adotar" name="antes-adotar" value="sim"> Tenho tempo e paciência para cuidar de um gato por muitos anos? <br>
+            <input type="checkbox" id="antes-adotar" name="antes-adotar" value="sim"> Todos que moram comigo concordam com a adoção? <br>
+            <input type="checkbox" id="antes-adotar" name="antes-adotar" value="sim"> Posso arcar com ração, areia, vacinas e consultas veterinárias? <br>
+            <input type="checkbox" id="antes-adotar" name="antes-adotar" value="sim"> Posso arcar com ração, areia, vacinas e consultas veterinárias? <br>
+            <input type="checkbox" id="antes-adotar" name="antes-adotar" value="sim"> Minha casa é segura, com telas de proteção nas janelas e varandas? <br>
+            <input type="checkbox" id="antes-adotar" name="antes-adotar" value="sim"> Estou pronto(a) para acolher o gato mesmo quando a rotina mudar? <br> </p>
+
+            <p>Respondeu “sim” para tudo? Então vamos conhecer os seus futuros companheiros.</p>
+        </section>
+
+        <section id="filtro">
+            <h3>Encontre o gato ideal para você</h3>
+
+            <p>Use os filtros para achar quem combina com o seu jeito de viver.</p>
+
+            <form action="">
+                <label for="idade">Idade:</label>
+                <select name="idade" id="idade">
+                    <option value="todos">Todos</option>
+                    <option value="filhote">Filhote (0-1 ano)</option>
+                    <option value="adulto">Adulto (1-7 anos)</option>
+                    <option value="idoso">Idoso (7+ anos)</option>
+                </select>
+
+                <label for="sexo">Sexo:</label>
+                <select name="sexo" id="sexo">
+                    <option value="todos">Todos</option>
+                    <option value="macho">Macho</option>
+                    <option value="femea">Fêmea</option>
+                </select>
+
+                <label for="porte">Porte:</label>
+                <select name="porte" id="porte">
+                    <option value="todos">Todos</option>
+                    <option value="pequeno">Pequeno</option>
+                    <option value="medio">Médio</option>
+                    <option value="grande">Grande</option>
+                </select>
+
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+        
+        <section id="gatos">
+            <h3>Gatos disponíveis para adoção</h3>
+
+            <div class="gato">
+                <img src="https://i.pinimg.com/236x/5b/3c/e1/5b3ce1acb5e668487e32956f385f6c5b.jpg" alt="Gato 1">
+                <h4>Nome do Gato 1</h4>
+                <p>Idade: ? anos</p>
+                <p>Sexo: Macho</p>
+                <p>Porte: Médio</p>
+                <p>Estado: Saudável</p>
+                <p>bio: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, sit fuga impedit sed sunt mollitia voluptate exercitationem ab cupiditate doloribus, quasi dolor aliquid nemo, fugit cum ea nihil deleniti vel.</p>
+                <button>Adotar</button>
+            </div>
+
+            <div class="gato">
+                <img src="https://i.pinimg.com/236x/5b/3c/e1/5b3ce1acb5e668487e32956f385f6c5b.jpg" alt="Gato 2">
+                <h4>Nome do Gato 2</h4>
+                <p>Idade: ? anos</p>
+                <p>Sexo: Fêmea</p>
+                <p>Porte: Pequeno</p>
+                <p>Estado: Saudável</p>
+                <p>bio: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, sit fuga impedit sed sunt mollitia voluptate exercitationem ab cupiditate doloribus, quasi dolor aliquid nemo, fugit cum ea nihil deleniti vel.</p>
+                <button>Adotar</button>
+            </div>
+
+            <!-- Mais gatos serão adicionados aqui -->
+        </section>
+
+        <section id="como-funciona">
+
+            <h3>O caminho até a adoção</h3>
+            
+            <p>1. Escolha o seu gato. Veja os perfis acima e escolha quem mais combina com você.</p>
+            <p>2. Preencha o formulário. Conte um pouco sobre você e sua casa, assim entendemos o que é melhor para o gato.</p>
+            <p>3. Converse com a nossa equipe. Entraremos em contato por WhatsApp ou e-mail em até 2 dias úteis para tirar dúvidas.</p>
+            <p>4. Venha conhecer pessoalmente. Agende uma visita para conviver com o gato e ver se vocês se escolhem.</p>
+            <p>5. Assine o termo e leve para casa. Depois da adoção, acompanhamos os primeiros meses para ajudar na adaptação.</p>
+        </section>
+
+        <section id="requisitos">
+            <h3>O que esperamos de você (e o que você pode esperar de nós)</h3>
+            <h4>Bloco 1: O que pedimos</h4>
+            <p> Ter 18 anos ou mais <br>
+                Apresentar documento com foto e comprovante de residência <br>
+                Concordância de todos que moram na casa <br>
+                Telas de proteção em janelas, varandas e sacadas <br>
+                Manter o gato dentro de casa, sem acesso livre à rua <br>
+                Levar ao veterinário quando necessário e manter as vacinas em dia  <br>
+                Nunca abandonar o animal: se não puder ficar com ele, devolva à MiauDota  <br>
+            </p>
+            <h4>Bloco 2: O que oferecemos</h4>
+            <p> Adoção gratuita, com contribuição voluntária <br>
+                Gato vacinado, vermifugado e, quando já tem idade, castrado <br>
+                Informações sobre a personalidade e o histórico do gato <br>
+                Orientações para os primeiros dias em casa <br>
+                Acompanhamento após a adoção <br>
+                Apoio a qualquer hora, por WhatsApp ou e-mail <br>
+            </p>
+        </section>
+
+        <section id="perguntas-frequentes">
+            <h3>Ainda tem dúvidas?</h3>
+            <div class="resposta-duvida">
+                <h4>1.Adotar custa alguma coisa?</h4>
+                <p>Não. A adoção é gratuita. Se você quiser, pode fazer uma contribuição voluntária, que ajuda a resgatar e cuidar de outros gatos.</p>
+            </div>
+            <div class="resposta-duvida">
+                <h4>2. Moro em apartamento. Posso adotar?</h4>
+                <p>Pode, sim! Muitos gatos vivem muito bem em apartamentos. Só pedimos telas de proteção em todas as janelas e varandas, por segurança.</p>
+            </div>
+            <div class="resposta-duvida">
+                <h4>3. Já tenho outros animais. Posso adotar mesmo assim?</h4>
+                <p>Pode. Conte no formulário quais animais moram com você, assim indicamos um gato com perfil compatível e orientamos a apresentação entre eles.</p>
+            </div>
+
+            <div class="resposta-duvida">
+                <h4>4. Posso adotar mais de um gato?</h4>
+                <p>Pode, desde que você tenha condições de cuidar bem de todos. Alguns dos nossos gatos até vivem melhor em dupla.</p>
+            </div>
+
+            <div class="resposta-duvida">
+                <h4>5. E se eu não conseguir mais ficar com o gato?</h4>
+                <p>Você nunca precisa abandoná-lo. Entre em contato e ele volta para a MiauDota, sem julgamentos. Queremos que ele fique seguro.</p>
+            </div>
+        </section>
+        
+        <section id="formulario">
+            <h3>Quero adotar</h3>
+            <p>Preencha com calma. Quanto mais soubermos sobre você, mais fácil encontrar o gato certo. Respondemos em até 2 dias úteis.</p>
+
+            <form action="">
+                <p><label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Como você se chama?"></p>
+
+                <p><label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com"></p>
+
+                <p><label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000"></p>
+
+                <p><label for="gato">Gato de interesse:</label>
+                <select name="gato" id="gato">
+                    <option value="gato1">Gato 1</option>
+                    <option value="gato2">Gato 2</option>
+                    <option value="gato3">Gato 3</option>
+                </select></p>
+
+                <p><label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="1" required></textarea></p>
+                
+                <p><label for="termos">Li e concordo com os termos de adoção:</label>
+                <input type="checkbox" id="termos" name="termos" required></p>
+                <button type="submit">Enviar</button>
+
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>MiauDota, ONG de proteção e adoção de gatos em São Paulo. Não compre, adote. &copy; 2026 MiauDota. Todos os direitos reservados. Projeto fictício desenvolvido para fins acadêmicos.</footer>
 </body>
