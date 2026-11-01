@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio | MiauDota</title>
     <link rel="stylesheet" href="/src/css/paginas/index.css">
     <script src="/src/js/paginas/index.js" defer></script>
 </head>
@@ -56,23 +56,26 @@
             <h3>Conheça nossos gatos disponíveis para adoção</h3>
             <p>Os nossos gatos estão aguardando por um lar amoroso, cada um deles com suas próprias personalidades e necessidades.</p>
             <p>Se você é da região de São Paulo, clique no botão abaixo, contate a equipe e conheça a historia daquele que vai conquistar seu coração!</p>
-            <button class="botao-adocao"><a href="/src/paginas/adocao.html">Adote um gato</a></button>
+            <a href="/src/paginas/adocao.html">Adote um gato</a>
         </section>
 
         <section id="alem-do-resgate">
             <h3>A adoção vai muito além de apenas resgatá-los</h3>
-            <p>Adotar um gato é uma decisão que traz muitos benefícios, tanto para o adotante quanto para o animal. Além de salvar uma vida, você estará proporcionando um lar cheio de amor e carinho para um animal que merece.</p>
+            <p></p>
         </section>
 
         <section id="contato">
             <h3>Contato</h3>
             <p>Estamos aqui para ajudar! Se você tiver dúvidas ou quiser saber mais sobre a adoção de gatos, entre em contato conosco.</p>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
+            <form action="/src/paginas/contato.html" method="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
         </section>
     </main>
     <footer>
