@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -79,6 +80,9 @@ footer > p{
     color: black;
 }
 
+=======
+@import url('global.css');
+>>>>>>> a15b1db66b6ec477148b0d0f489e4607679b7dfa
 
 #vamos-conversar{
     box-sizing: border-box;
@@ -133,7 +137,11 @@ footer > p{
 }
 .cards{
 display: flex;
+<<<<<<< HEAD
 }
 =======
 @import url('global.css');
 >>>>>>> a5d16754a46f454856e82788b29d5f987506f94a
+=======
+}
+>>>>>>> a15b1db66b6ec477148b0d0f489e4607679b7dfa
