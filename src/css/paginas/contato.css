@@ -1,1 +1,56 @@
 @import url('global.css');
+
+#vamos-conversar{
+    box-sizing: border-box;
+    width: 70%;
+    padding: 100px;
+    margin:100px auto ;
+    background-color: rgb(244, 233, 186);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 8px rgb(206, 203, 203);
+    position:relative;
+    overflow:hidden;
+    
+}
+
+#vamos-conversar >h3{
+    font-size: 30px;
+    margin: 10px;
+    color: rgb(227, 110, 227);
+}
+
+#vamos-conversar >p{
+    text-align: left;
+    font-size: 15px;
+    width: 40%;
+
+   
+}
+#vamos-conversar >img{
+    position: absolute;
+    right:0px;
+    transform: translateY(-50%);  
+    height: 300px;
+    max-width: 40%;    
+    object-fit: contain; 
+}
+
+#canais-contato{
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    box-sizing: border-box;
+    background-color: aqua;
+    padding: 20px;
+    
+}
+#card-whatsapp{
+    border-radius: 10px;
+    
+
+}
+.cards{
+display: flex;
+}
