@@ -7,7 +7,7 @@
     margin:100px auto ;
     background-color: var(--cor-cards);
     border-radius: 10px;
-    box-shadow: 0px 0px 8px 8px var(--cor-sombra);
+    box-shadow: 0px 0px 8px 8px rgb(206, 203, 203);
     position:relative;
     overflow:hidden;
 }
