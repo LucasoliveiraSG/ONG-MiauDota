@@ -1,1 +1,116 @@
 @import url('global.css');
+
+h2, h3, h4 {
+    text-align: center;
+    color: var(--cor-titulos);
+    font-family: var(--fonte-principal);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: justify;
+    max-width: 800px;
+    margin: 15px auto;
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+}
+
+{
+    background-color: var(--cor-fundo-suave);
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: var(--raio);
+    margin-bottom: 40px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo-suave);
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: var(--raio);
+    font-weigth: bold;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px var(--cor-sombra);
+    transition: opacity 0.3s;
+}
+
+.botao:hover {
+    opacity: 0.9;
+}
+
+figure {
+    text-align: center;
+    margin: 30px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--raio);
+    box-shadow: 0 4px 8px var(--cor-sombra);
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--cor-principal);
+    text-align: center;
+    border-left: 4px solid var(--cor-principal);
+    padding: 10px 20px;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.marco {
+    background-color: var(--cor-fundo-secundario);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: var(--raio);
+    border-left: 5px solid var(--cor-principal);
+}
+
+.marco time {
+    font-weight: bold;
+    color: var(--cor-principal);
+    font-size: 1.2rem;
+}
+
+.marco h3 {
+    text-align: left;
+    margin: 5px 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.card {
+    background-color: var(--cor-cards);
+    padding: 25px;
+    border-radius: var(--raio);
+    flex: 1 1 250px;
+    max-width: 350px;
+    box-shadow: 0 4px 6px var(--cor-sombra);
+}
+
+.card .numero {
+    display: block;
+    font-size: 2.5rem;
+    color: var(--cor-principal);
+    font-weight: bold;
+    text-align: center;
+}
+
+
