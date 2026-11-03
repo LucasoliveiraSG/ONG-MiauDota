@@ -17,6 +17,8 @@ img{
     --cor-fundo-suave: #fff4e8;
     --cor-texto: #3a2e28;
     --raio: 16px;
+    --cor-sombra: rgba(0, 0, 0, 0.12);
+    --cor-fundo-segundario: #f7f2eb;
 }
 #inicio, #sobre, #adocao, #contato{
     color: var(--cor-titulos);
@@ -55,12 +57,6 @@ nav, nav > ul{
     padding: 0px;
     gap: 80px;
 }
-nav > ul > li> a{
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    font-family: var(--fonte-principal);
-}
 nav > ul > a > img{
     width: auto;
     height: 3.5rem;
@@ -74,6 +70,10 @@ nav > ul > li > a{
     font-size:  1.5rem;
     color: black;
     position: relative;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-principal);
 }
 nav > ul > li > a::after{
     content: " ";
@@ -101,6 +101,45 @@ footer{
     height: 4rem;
     margin: 30px 0px auto;
 }
+.botao-decorativo{
+    display: inline-block;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--cor-titulos);
+    color: var(--cor-fundo-suave);
+    font-family: var(--fonte-principal);
+    transition: transform 0.2s ease-in-out;
+}
+.botao-decorativo:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px var(--cor-sombra);
+}
+.card{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    padding: 32px 24px;
+    background: var(--cor-fundo-suave);
+    border-radius: var(--raio);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: grid;
+    gap: 24px;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: var(--cor-cards);
+}
+
 .final {
     border: 1px solid black;
     border-radius: 10px 10px 0px 0px;
