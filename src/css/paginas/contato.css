@@ -6,7 +6,7 @@
     padding: 100px;
     margin:100px auto ;
     background-color: var(--cor-cards);
-    border-radius: 10px;
+    border-radius: 30px 0px 0px 30px ;
     box-shadow: 0px 0px 8px 8px rgb(206, 203, 203);
     position:relative;
     overflow:hidden;
@@ -26,7 +26,7 @@
 }
 #vamos-conversar >img{
     position: absolute;
-    right:0px;
+    right:-5px;
     transform: translateY(-50%);  
     height: 300px;
     max-width: 40%;    
@@ -45,6 +45,7 @@
 }
 #card-whatsapp{
     border-radius: 10px;
+    
     
 
 }
