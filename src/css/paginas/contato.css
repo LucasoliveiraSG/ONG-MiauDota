@@ -5,7 +5,7 @@
     width: 70%;
     padding: 100px;
     margin:100px auto ;
-    background-color: rgb(244, 233, 186);
+    background-color: var(--cor-cards);
     border-radius: 10px;
     box-shadow: 0px 0px 8px 8px rgb(206, 203, 203);
     position:relative;
@@ -16,15 +16,13 @@
 #vamos-conversar >h3{
     font-size: 30px;
     margin: 10px;
-    color: rgb(227, 110, 227);
+    color: var(--cor-titulos);
 }
 
 #vamos-conversar >p{
     text-align: left;
     font-size: 15px;
-    width: 40%;
-
-   
+    width: 40%; 
 }
 #vamos-conversar >img{
     position: absolute;
@@ -43,8 +41,7 @@
     display: flex;
     box-sizing: border-box;
     background-color: aqua;
-    padding: 20px;
-    
+    padding: 20px; 
 }
 #card-whatsapp{
     border-radius: 10px;

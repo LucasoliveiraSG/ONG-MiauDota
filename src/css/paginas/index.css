@@ -1,1 +1,200 @@
 @import url('global.css');
+
+section {
+    margin-top: 50px;
+}
+#introducao{
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 40px;
+    padding: 50px;
+    background-color: transparent;
+    position: relative;
+}
+.caixa-texto {
+    flex: 1;
+    background-color: var(--cor-cards);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    border-radius: 30px 0px 0px 30px; 
+    box-shadow: 0px 0px 8px 8px rgb(189, 189, 189);
+}
+.caixa-texto > h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    color: var(--cor-titulos);
+    margin-bottom: 3rem;
+}
+.caixa-texto > p {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+.caixa-imagem {
+    flex: 1;
+    display: flex;
+    box-shadow: 12px 0px 8px 8px rgb(189, 189, 189);
+}
+.caixa-imagem > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0px 30px 30px 0px; 
+}
+#introducao > div > p > a{
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 20px;
+}
+#introducao > div > p > a:hover{
+    color: white;
+    background-color: gray;
+    transition: 0.3s ease-in-out;
+}
+
+/* segunda seção */
+#encontre-amigo{
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 10rem auto 0 auto;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 40px;
+    padding: 60px 50px 80px 50px;
+    background-color: transparent;
+    position: relative;
+}
+#encontre-amigo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background-color: #f7f2eb; /* Cor creme da parte de baixo */
+    z-index: -1;
+}
+
+/* Curvatura creme subindo na transição entre as seções */
+#encontre-amigo::after {
+    content: "";
+    position: absolute;
+    top: -90px; /* Faz o degrau creme subir em direção à primeira seção */
+    right: calc(50% - 50vw); /* Posiciona a elevação no lado direito */
+    width: 56vw; /* Largura da aba elevada */
+    height: 92px; /* +2px para sobrepor o ::before sem deixar fresta */
+    background-color: #f7f2eb; /* Mesma cor creme */
+    border-top-left-radius: 65px; /* Cria a curva suave no encontro com o meio */
+    z-index: -1;
+}
+.caixa-gato-curioso {
+    flex: 1;
+    padding: 0px 40px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+}
+.caixa-gato-curioso > h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    color: var(--cor-titulos);
+}
+.caixa-gato-curioso > p {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* terceira seção  */
+#por-que-adotar {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 64px 16px;
+    text-align: center;
+    color: var(--cor-texto);
+}
+
+#por-que-adotar h3 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 16px;
+    color: var(--cor-titulos);
+}
+
+#por-que-adotar h3::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 4px;
+    margin: 12px auto 0;
+    background: var(--cor-titulos);
+    border-radius: 2px;
+}
+
+#por-que-adotar > p {
+    max-width: 640px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+#por-que-adotar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+}
+
+#por-que-adotar li {
+    padding: 32px 24px;
+    background: var(--cor-fundo-suave);
+    border-radius: var(--raio);
+    font-size: 1.1rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#por-que-adotar li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: var(--cor-cards);
+}
+
+#por-que-adotar li::before {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 2.2rem;
+    -webkit-mask-image: url("/src/assets/imagens/cat.svg");
+    mask-image: url("/src/assets/imagens/cat.svg");
+}
+
+#por-que-adotar li:nth-child(1)::before { content: "🐾"; }
+#por-que-adotar li:nth-child(2)::before { content: "💛"; }
+#por-que-adotar li:nth-child(3)::before { content: "🌟"; }
+
+@media (prefers-reduced-motion: reduce) {
+    #por-que-adotar li {
+        transition: none;
+    }
+
+    #por-que-adotar li:hover {
+        transform: none;
+    }
+}

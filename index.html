@@ -14,7 +14,7 @@
                 <a href="/index.html">
                     <img src="src/assets/imagens/MiauDota.png" alt="Logo da MiauDota">
                 </a>
-                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/index.html" id="inicio">Inicio</a></li>
                 <li><a href="/src/paginas/sobre.html">Sobre</a></li>
                 <li><a href="/src/paginas/adocao.html">Adoção</a></li>
                 <li><a href="/src/paginas/contato.html">Contato</a></li>
@@ -23,14 +23,24 @@
     </header>
     <main>
         <section id="introducao">
-            <h3>ONG de adoção de gatos com responsabilidade e carinho</h3>
-            <p>Somos uma ONG, localizada em são paulo, dedicada à proteção e adoção de gatos. Nosso objetivo é encontrar lares amorosos para gatos abandonados, promovendo a conscientização sobre a importância da adoção responsável e do cuidado com os animais.</p>
-            <p><a href="/src/paginas/sobre.html">Saiba mais sobre nós</a></p>
+            <div class="caixa-texto">
+                <h3>ONG de adoção de gatos com responsabilidade e carinho</h3>
+                <p>Somos uma ONG, localizada em são paulo, dedicada à proteção e adoção de gatos. Nosso objetivo é encontrar lares amorosos para gatos abandonados, promovendo a conscientização sobre a importância da adoção responsável e do cuidado com os animais.</p>
+                <p><a href="/src/paginas/sobre.html">Saiba mais sobre nós</a></p>
+            </div>
+            <div class="caixa-imagem">
+                <img src="src/assets/imagens/abraco-gato.png">
+            </div>
         </section>
         
         <section id="encontre-amigo">
+            <div class="gato-curioso">
+                <img src="src/assets/imagens/gato-curioso.jpg" alt="Gato curioso">
+            </div>
+            <div class="caixa-gato-curioso">
             <h3>A MiauDota pode te ajudar a encontrar o seu melhor amigo</h3>
             <p>Se você está procurando por um gato para sua família, na MiauDota você encontrará um animal que irá trazer alegria e companhia para sua casa. Temos diversas opções de gatos para adoção, todos muito bem cuidados.</p>
+            </div>
         </section>
 
         <section id="por-que-adotar">
@@ -66,7 +76,7 @@
             <p></p>
         </section>
 
-        <section id="contato">
+        <section id="entrar-contato">
             <h3>Contato</h3>
             <p>Estamos aqui para ajudar! Se você tiver dúvidas ou quiser saber mais sobre a adoção de gatos, entre em contato conosco.</p>
             <form action="/src/paginas/contato.html" method="POST">
