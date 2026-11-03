@@ -33,22 +33,69 @@
 }
 
 #canais-contato{
+    
     text-align: center;
 }
 
-.card{
-    display: flex;
-    box-sizing: border-box;
-    background-color: aqua;
-    padding: 20px; 
-}
-#card-whatsapp{
-    border-radius: 10px;
-    
-    
-
-}
 .cards{
-display: flex;
+    display:flex;
+   text-align: center; 
 }
+
+#card-whatsapp{
+    background-color: rgb(201, 105, 208);
+}
+
+#card-whatsapp >h4, #card-whatsapp >p{
+ color: white;
+}
+
+#card-whatsapp >img{
+    max-width: 60px;
+    margin-left:140px;
+}
+
+#card-email{
+    background-color: rgb(168, 95, 95);
+}
+#card-email >img{
+    max-width: 60px;
+    margin-left: 100px;
+}
+#card-instagram{
+    background-color: rgb(213, 173, 92);
+}
+
+#card-instagram >img{
+    max-width: 40px;
+    margin-left: 114px;
+}
+
+#visita-card >img{
+    max-width: 40px;
+    margin-left: 129px
+}
+
+
+#formulario{
+
+    background-color: var(--cor-cards);
+    max-width:500px;
+    width: 100%;
+    text-align: center;
+    margin: 10rem auto 0 auto;
+    border-radius: 40px;
+    padding: 10px 10px 10px 10px;
+    position: relative;
+    margin-bottom: 70px;
+}
+form >p, form >label{
+    color: var(--cor-titulos);
+}
+#formulario h2{
+    margin-bottom: 40px;
+    color: var(--cor-titulos);
+}
+
+
 
