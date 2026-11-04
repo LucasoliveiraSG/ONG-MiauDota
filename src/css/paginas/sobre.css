@@ -29,7 +29,7 @@ p {
     text-decoration: none;
     padding: 12px 24px;
     border-radius: var(--raio);
-    font-weigth: bold;
+    font-weight: bold;
     margin-top: 20px;
     box-shadow: 0 4px 6px var(--cor-sombra);
     transition: opacity 0.3s;
