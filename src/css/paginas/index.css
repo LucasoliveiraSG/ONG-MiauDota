@@ -235,7 +235,17 @@ section {
     border-radius: 40px;
     padding: 60px 50px 80px 50px;
     background-color: transparent;
-    position: relative; 
+    position: relative;
+    --contato-painel: var(--cor-texto, #3a2e28);          /* fundo do painel escuro */
+    --contato-destaque: var(--cor-principal, #f28c38);    /* título sobre fundo escuro */
+    --contato-destaque-escuro: #b45309;                   /* botão e links sobre fundo claro */
+    --contato-destaque-hover: #92400e;
+    --contato-fundo: var(--cor-fundo-suave, #fff4e8);
+    --contato-campo-fundo: #f8f8f8;
+    --contato-borda: #8f8882;
+    --contato-texto-suave: #6b645e;
+    --contato-erro: #b42318;
+    --contato-raio: 24px;
 }
 #entrar-contato::after{
     content: "";
@@ -248,19 +258,101 @@ section {
     background-color: var(--cor-fundo-segundario);
     z-index: -1;
 }
-#entrar-contato > .caixa-texto{
-    flex: 0.5;
-    box-shadow: 0px 0px 0px 0px;
+.contato-geral{
+    display: grid;
+    grid-template-columns: minmax(0, 47fr) minmax(0, 53fr);
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 64px 16px;
+    background: transparent;
 }
-.caixa-form{
-    font-size: 1.6rem;
-    text-align: center;
-    flex: 1;
-    background-color: var(--cor-sombra);
-    border-radius: 0px 40px 40px 0px;
-}
-.caixa-form > form > label, .caixa-form > form > input {
-    margin: 20px auto 0px auto;
+.contato-cartao{
     display: flex;
+    flex-direction: column;
+    padding: 48px 40px;
+    background: var(--contato-painel);
+    color: var(--cor-titulos);    
+    border-radius: 24px 0px 0px 24px;
+}
+.contato-assunto > h3{
+    margin: 0 0 32px;
+    font-size: clamp(1.5rem, 3vw, 1.9rem);
+    font-weight: 800;
+    line-height: 1.2;
     color: var(--cor-titulos);
+}
+.contato-assunto > p{
+    display: grid;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 48px 40px;
+    background: #fff;
+}
+.contato-campo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.contato-campo label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--contato-painel);
+}
+.contato-form input, .contato-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 16px;
+    font: inherit;
+    font-size: 1rem;                  /* 16px evita zoom automático no iPhone */
+    color: var(--contato-painel);
+    background: var(--contato-campo-fundo);
+    border: 1px solid var(--contato-borda);
+    border-radius: 14px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.contato-form input,
+.contato-form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 16px;
+    font: inherit;
+    font-size: 1rem;                  /* 16px evita zoom automático no iPhone */
+    color: var(--contato-painel);
+    background: var(--contato-campo-fundo);
+    border: 1px solid var(--contato-borda);
+    border-radius: 14px;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.contato-form input::placeholder, .contato-form textarea::placeholder {
+    color: var(--contato-texto-suave);
+    opacity: 1;                       /* o Firefox deixa o placeholder transparente */
+}
+
+.contato-form input:hover, .contato-form textarea:hover {
+    border-color: var(--contato-painel);
+}
+
+/* Foco: mantém o contorno (acessibilidade) e muda a borda */
+.contato-form input:focus-visible, .contato-form textarea:focus-visible {
+    background: #fff;
+    border-color: var(--contato-destaque-escuro);
+    outline: 3px solid rgba(180, 83, 9, 0.35);
+    outline-offset: 2px;
+}
+
+.contato-form textarea {
+    min-height: 140px;
+    line-height: 1.5;
+    resize: vertical;                 /* ninguém quebra o layout arrastando de lado */
 }
