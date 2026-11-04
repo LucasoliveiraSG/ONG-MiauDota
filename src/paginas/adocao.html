@@ -187,8 +187,10 @@
                     <option value="gato3">Gato 3</option>
                 </select></p>
 
+                <!-- Definindo área de texto e adicionando contador de caracteres -->
                 <p><label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="1" required></textarea></p>
+                <textarea id="mensagem" name="mensagem" rows="1" required maxlength="500"></textarea></p>
+                <p style="font-size: small;">Caracteres: <span id="contador">500</span>/500</p>
                 
                 <p><label for="termos">Li e concordo com os termos de adoção:</label>
                 <input type="checkbox" id="termos" name="termos" required></p>
