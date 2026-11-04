@@ -43,32 +43,52 @@
 }
 
 #card-whatsapp{
-    background-color: rgb(201, 105, 208);
+    background-color: rgb(83, 167, 96);
 }
 
 #card-whatsapp >h4, #card-whatsapp >p{
- color: white;
+ color: beige;
 }
 
 #card-whatsapp >img{
     max-width: 60px;
-    margin-left:140px;
+    margin:0px auto 0px auto;
+
 }
 
 #card-email{
-    background-color: rgb(168, 95, 95);
+    background-color: rgb(194, 66, 66);
 }
+
+#card-email >h4, #card-email >p{
+    color: beige;
+}
+
+
 #card-email >img{
     max-width: 60px;
     margin-left: 100px;
 }
 #card-instagram{
-    background-color: rgb(213, 173, 92);
+    background-color: rgb(220, 176, 87);
+}
+
+#card-instagram>h4, #card-instagram>p{
+    color: beige;
 }
 
 #card-instagram >img{
     max-width: 40px;
     margin-left: 114px;
+}
+
+#visita-card{
+    background-color: rgb(89, 135, 175);
+}
+
+#visita-card>h4, #visita-card>p{
+    color: beige;
+
 }
 
 #visita-card >img{
@@ -96,6 +116,66 @@ form >p, form >label{
     margin-bottom: 40px;
     color: var(--cor-titulos);
 }
+#card-caminho{
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 10rem auto 0 auto;
+    border-radius: 40px;
+    padding: 60px 50px 65px 50px;
+    background-color: transparent;
+    position: relative;
+}
+#card-caminho::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background-color: var(--cor-fundo-segundario);
+    z-index: -1;
+}
+
+#canais-contato >h3{
+    color: var(--cor-titulos);
+    margin-bottom: 20px;
+    
+}
+
+#canais-contato >p{
+    color: var(--cor-titulos);
+    
+}
+
+#visitar{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;                
+    max-width: 1100px;       
+    margin: 250px auto;       
+    padding: 40px 60px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: rgb(233, 218, 173);
+    color: rgb(156, 84, 32);
+    
+}
+
+#perguntas{
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+#final{
+    text-align: center;
+}
+
+
+
 
 
 
