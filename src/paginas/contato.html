@@ -86,9 +86,12 @@
                     <option value="imprensa">Imprensa e parcerias</option>
                     <option value="outro">Outro assunto</option>
                 </select>
-                <!--acho interessante colocar aqui um contador de caracteres no campo “Mensagem” (por exemplo, “0/500”), usando o JavaScript-->
+                
+                <!--Feito no Javascript, adicionando contador de caracteres-->
                 <p><label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="1" required></textarea></p>
+                <textarea id="mensagem" name="mensagem" rows="1" required maxlength="500"></textarea></p>
+                <p style="font-size: small;">Caracteres: <span id="contador">500</span>/500</p>
+                
                 <p><label for="termos">Concordo em compartilhar meus dados para que a MiauDota responda à minha mensagem</label>
                 <input type="checkbox" id="termos" name="termos" required></p>
                 <button type="submit">Enviar</button>
