@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conheça a história, a missão, os números e a equipe da MiauDota, ONG de proteção e adoção de gatos em São Paulo.">
+    <meta name="description" content="Conheça a história, a missão, os números e a equipe da MiauDota, ONG de proteção e adoção de gatos in São Paulo.">
     <title>Sobre | MiauDota</title>
     <link rel="stylesheet" href="/src/css/paginas/sobre.css">
     <script src="/src/js/paginas/sobre.js" defer></script>
@@ -12,11 +12,11 @@
     <header>
         <nav>
             <ul>
-                <a href="/index.html">
-                    <img src="/src/assets/imagens/MiauDota.png" alt="Logo da MiauDota">
+                <a href="/index.html" class="logo-link">
+                    <img src="/src/assets/imagens/MiauDota.png" alt="Logo da MiauDota" class="logo-img">
                 </a>
                 <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/src/paginas/sobre.html" id="sobre">Sobre</a></li>
+                <li><a href="/src/paginas/sobre.html" id="sobre" class="active">Sobre</a></li>
                 <li><a href="/src/paginas/adocao.html">Adoção</a></li>
                 <li><a href="/src/paginas/contato.html">Contato</a></li>
             </ul>
@@ -24,32 +24,35 @@
     </header>
 
     <main>
-        <!-- 2. Banner de abertura (a imagem de fundo entra pelo CSS) -->
         <section id="banner">
-            <h2>Sobre a MiauDota</h2>
-            <p>Uma história que começou com uma caixa de papelão e hoje já abraçou quase mil gatos.</p>
-            <a class="botao" href="#nossa-historia">Conheça a nossa história</a>
+            <div class="banner-content">
+                <h2>Sobre a MiauDota</h2>
+                <p>Uma história que começou com uma caixa de papelão e hoje já abraçou quase mil gatos.</p>
+                <a class="botao" href="#nossa-historia">Conheça a nossa história</a>
+            </div>
         </section>
 
-        <!-- 3. Nossa história -->
         <section id="nossa-historia">
             <h2>Tudo começou com uma caixa de papelão</h2>
-            <figure>
-                <img src="/src/img/sobre/dota-na-caixa.jpg" alt="Gatinha cinza dentro de uma caixa de papelão" width="600" height="400" loading="lazy">
-                <figcaption>A Dota, a primeira gatinha resgatada pela MiauDota.</figcaption>
+
+                 <figure>
+                <img src="../assets/imagens/gatinha-cacau-modelo.jpeg" alt="Gatinha de olhos azuis dentro de uma caixa de papelão" width="600" height="400" loading="lazy">
+
+                <figcaption>Cacau, a primeira gatinha resgatada pela MiauDota.</figcaption>
             </figure>
-            <p>Em 2019, a estudante de veterinária Marina Duarte encontrou uma gatinha cinza e assustada dentro de uma caixa, debaixo de um viaduto na zona leste de São Paulo. Ela a chamou de Dota, porque a única coisa que a bichinha precisava era que alguém a adotasse. Marina cuidou dela no quarto da república onde morava, e foi ali, entre mamadeiras e noites em claro, que nasceu a ideia da MiauDota.</p>
-            <p>Nos primeiros meses, a ONG era uma rede de amigos que dividia ração, transporte e contas de veterinário. Faltavam espaço, dinheiro e mãos, e muitas vezes a gente chorava mais do que comemorava. Mesmo assim, cada gato que ia para uma casa de verdade nos dava força para continuar. Aos poucos vieram os voluntários, os lares temporários, os mutirões de castração e, em 2022, nossa primeira sede.</p>
-            <p>Hoje, a MiauDota é uma comunidade de pessoas que acreditam que adoção responsável muda vidas, a do gato e a da família que o recebe. Seguimos com o mesmo propósito do primeiro dia: nenhum gato deve ser deixado para trás. E a Dota? Mora com a Marina até hoje e manda lembranças.</p>
+            <div class="texto-historia">
+                <p>Em 2019, a estudante de veterinária Marina Duarte encontrou uma gatinha da raça Snowshoe, assustada dentro de uma caixa, debaixo de um viaduto na zona leste de São Paulo. Ela a chamou de Cacau. Marina viu que a única coisa que ela precisava era que alguém a adotasse. Marina cuidou dela no quarto da república onde morava, e foi ali, entre mamadeiras e noites em claro, que nasceu a ideia da MiauDota.</p>
+                <p>Nos primeiros meses, a ONG era uma rede de amigos que dividia ração, transporte e contas de veterinário. Faltavam espaço, dinheiro e mãos, e muitas vezes a gente chorava mais do que comemorava. Mesmo assim, cada gato que ia para uma casa de verdade nos dava força para continuar. Aos poucos vieram os voluntários, os lares temporários, os mutirões de castração e, em 2022, nossa primeira sede.</p>
+                <p>Hoje, a MiauDota é uma comunidade de pessoas que acreditam que adoção responsável muda vidas, a do gato e a da família que o recebe. Seguimos com o mesmo propósito do primeiro dia: nenhum gato deve ser deixado para trás. E a Cacau? Mora com a Marina até hoje e manda lembranças.</p>
+            </div>
             <blockquote>
-                <p>Nenhum gato deve ser deixado para trás.</p>
+                <p>"Nenhum gato deve ser deixado para trás."</p>
             </blockquote>
         </section>
 
-        <!-- 4. Linha do tempo -->
         <section id="linha-do-tempo">
             <h2>Nossa trajetória</h2>
-            <p>Cada passo da MiauDota foi dado com a ajuda de muita gente. Veja como chegamos até aqui.</p>
+            <p class="subtitulo">Cada passo da MiauDota foi dado com a ajuda de muita gente. Veja como chegamos até aqui.</p>
             <ol class="marcos">
                 <li class="marco">
                     <time datetime="2019">2019</time>
@@ -69,7 +72,7 @@
                 <li class="marco">
                     <time datetime="2024">2024</time>
                     <h3>Mutirão de castração</h3>
-                    <p>Realizamos o primeiro mutirão gratuito para tutores de baixa renda, ajudando a reduzir o abandono.</p>
+                    <p>Realizamos o primeiro mutirão gratuito para tutores de baixa renda, ajudando a reduzir o abandonment.</p>
                 </li>
                 <li class="marco">
                     <time datetime="2026">2026</time>
@@ -77,14 +80,14 @@
                     <p>Chegamos a 986 adoções e 62 voluntários ativos, e seguimos com o mesmo propósito do primeiro dia.</p>
                 </li>
             </ol>
-            <p>E a nossa história continua. O próximo capítulo pode ter o seu nome.</p>
+            <p class="fechamento">E a nossa história continua. O próximo capítulo pode ter o seu nome.</p>
         </section>
 
-        <!-- 5. Missão, visão e valores -->
         <section id="missao-visao-valores">
             <h2>O que nos move</h2>
-            <p>Mais do que uma ONG, somos pessoas unidas por um mesmo propósito: cuidar de quem não tem voz.</p>
-            <div class="cards">
+            <p class="subtitulo">Mais do que uma ONG, somos pessoas unidas por um mesmo propósito: cuidar de quem não tem voz.</p>
+            
+            <div class="cards-principais">
                 <article class="card" id="card-missao">
                     <h3>Nossa missão</h3>
                     <p>Resgatar, cuidar e encontrar lares amorosos para gatos abandonados, promovendo a guarda responsável e a conscientização sobre o respeito aos animais.</p>
@@ -97,7 +100,7 @@
 
             <div id="valores">
                 <h3>Nossos valores</h3>
-                <ul class="cards">
+                <ul class="cards-valores">
                     <li class="card">
                         <h4>Afeto</h4>
                         <p>Cada gato é único, com nome, história e personalidade.</p>
@@ -120,14 +123,13 @@
                     </li>
                 </ul>
             </div>
-            <p>Esses valores guiam cada resgate, cada adoção e cada decisão que tomamos.</p>
+            <p class="fechamento">Esses valores guiam cada resgate, cada adoção e cada decisão que tomamos.</p>
         </section>
 
-        <!-- 6. Números de impacto (o JS pode animar os contadores usando data-valor) -->
         <section id="numeros">
             <h2>Nossos números</h2>
-            <p>Cada número é uma vida que mudou. Desde 2019, a MiauDota já alcançou:</p>
-            <ul class="cards">
+            <p class="subtitulo">Cada número é uma vida que mudou. Desde 2019, a MiauDota já alcançou:</p>
+            <ul class="cards-numeros">
                 <li class="card">
                     <strong class="numero" data-valor="1248">1.248</strong>
                     <span>gatos resgatados</span>
@@ -150,120 +152,11 @@
                 </li>
             </ul>
         </section>
-
-        <!-- 7. Equipe -->
-        <section id="equipe">
-            <h2>Quem faz acontecer</h2>
-            <p>Por trás de cada adoção existe uma equipe de pessoas que dedicam seu tempo aos gatos.</p>
-            <div class="cards">
-                <article class="card membro">
-                    <img src="/src/img/sobre/equipe-marina.jpg" alt="Retrato de Marina Duarte" width="200" height="200" loading="lazy">
-                    <h3>Marina Duarte</h3>
-                    <p class="cargo">Fundadora e presidente</p>
-                    <blockquote><p>Cada gato me ensinou algo sobre paciência.</p></blockquote>
-                </article>
-                <article class="card membro">
-                    <img src="/src/img/sobre/equipe-carlos.jpg" alt="Retrato de Carlos Menezes" width="200" height="200" loading="lazy">
-                    <h3>Carlos Menezes</h3>
-                    <p class="cargo">Médico-veterinário responsável</p>
-                    <blockquote><p>Cuidar bem começa pela prevenção.</p></blockquote>
-                </article>
-                <article class="card membro">
-                    <img src="/src/img/sobre/equipe-beatriz.jpg" alt="Retrato de Beatriz Lima" width="200" height="200" loading="lazy">
-                    <h3>Beatriz Lima</h3>
-                    <p class="cargo">Coordenadora de adoções</p>
-                    <blockquote><p>O match certo faz toda a diferença.</p></blockquote>
-                </article>
-                <article class="card membro">
-                    <img src="/src/img/sobre/equipe-rafael.jpg" alt="Retrato de Rafael Tanaka" width="200" height="200" loading="lazy">
-                    <h3>Rafael Tanaka</h3>
-                    <p class="cargo">Voluntariado e comunicação</p>
-                    <blockquote><p>Uma boa história faz um gato achar lar.</p></blockquote>
-                </article>
-            </div>
-        </section>
-
-        <!-- 8. Transparência -->
-        <section id="transparencia">
-            <h2>Para onde vai a sua doação</h2>
-            <p>Acreditamos que quem ajuda tem o direito de saber como o dinheiro é usado. Veja como distribuímos os recursos:</p>
-            <ul class="distribuicao">
-                <li>
-                    <label for="barra-alimentacao">Alimentação e cuidados diários: 45%</label>
-                    <progress id="barra-alimentacao" value="45" max="100">45%</progress>
-                </li>
-                <li>
-                    <label for="barra-saude">Saúde, vacinas e castrações: 30%</label>
-                    <progress id="barra-saude" value="30" max="100">30%</progress>
-                </li>
-                <li>
-                    <label for="barra-sede">Manutenção da sede: 15%</label>
-                    <progress id="barra-sede" value="15" max="100">15%</progress>
-                </li>
-                <li>
-                    <label for="barra-divulgacao">Divulgação e eventos de adoção: 10%</label>
-                    <progress id="barra-divulgacao" value="10" max="100">10%</progress>
-                </li>
-            </ul>
-            <p>R$ 20 pagam uma vacina. R$ 150 ajudam em uma castração.</p>
-        </section>
-
-        <!-- 9. Como ajudar -->
-        <section id="como-ajudar">
-            <h2>Como ajudar</h2>
-            <p>Você não precisa adotar para fazer parte da nossa história. Veja como apoiar a MiauDota:</p>
-            <div class="cards">
-                <article class="card" id="card-apadrinhamento">
-                    <h3>Apadrinhe um gato</h3>
-                    <p>Contribua mensalmente, a partir de R$ 30, com ração, vacinas e cuidados de um gato que vive na ONG. Você recebe novidades dele por e-mail.</p>
-                    <a class="botao" href="/src/paginas/contato.html#formulario">Quero apadrinhar</a>
-                </article>
-                <article class="card" id="card-lar-temporario">
-                    <h3>Seja lar temporário</h3>
-                    <p>Abra sua casa por algumas semanas para um filhote ou gato em recuperação. Fornecemos ração, areia e assistência veterinária.</p>
-                    <a class="botao" href="/src/paginas/contato.html#formulario">Quero ser lar temporário</a>
-                </article>
-                <article class="card" id="card-doacao">
-                    <h3>Faça uma doação</h3>
-                    <p>Qualquer valor faz diferença. Também aceitamos ração, areia, cobertores e remédios.</p>
-                    <p>Chave PIX: <strong>doe@miaudota.org</strong></p>
-                </article>
-                <article class="card" id="card-voluntario">
-                    <h3>Seja voluntário(a)</h3>
-                    <p>Ajude em feiras de adoção, transporte de animais, redes sociais e no cuidado do abrigo. Todas as habilidades são bem-vindas.</p>
-                    <a class="botao" href="/src/paginas/contato.html#canais-contato">Falar sobre voluntariado</a>
-                </article>
-            </div>
-            <p>Divulgue também! Compartilhe nossos gatinhos e a ideia de adoção responsável. Às vezes, um compartilhamento é o que falta para um gato achar um lar.</p>
-        </section>
-
-        <!-- 10. Onde estamos -->
-        <section id="onde-estamos">
-            <h2>Onde estamos</h2>
-            <p>Estamos na Vila Mariana, em São Paulo, e adoramos receber visitas com agendamento.</p>
-            <ul>
-                <li>Endereço: Rua dos Gatinhos, 120, Vila Mariana, São Paulo, SP, CEP 04000-000</li>
-                <li>Visitas (com agendamento): terça a sexta, das 14h às 18h; sábados, das 10h às 16h</li>
-                <li>Atendimento por WhatsApp e e-mail: segunda a sexta, das 9h às 18h</li>
-                <li>Fechado: domingos e feriados</li>
-                <li>WhatsApp: <a href="https://wa.me/5511987654321">(11) 98765-4321</a></li>
-                <li>E-mail: <a href="mailto:contato@miaudota.org">contato@miaudota.org</a></li>
-                <li>Instagram: <a href="https://www.instagram.com/miaudota.ong/">@miaudota.ong</a></li>
-            </ul>
-        </section>
-
-        <!-- 11. Chamada final -->
-        <section id="final">
-            <h2>Sua família pode ser o final feliz de um gato</h2>
-            <p>Conheça quem está esperando por um lar e comece essa nova história.</p>
-            <a class="botao" href="/src/paginas/adocao.html">Adote um gato</a>
-        </section>
     </main>
 
     <footer>
-        <div class="final">
-            <p id="direito"> MiauDota, ONG de proteção e adoção de gatos em São Paulo. Não compre, adote.
-            &copy; 2026 MiauDota. Todos os direitos reservados. Projeto fictício desenvolvido para fins acadêmicos.</p>
+        <div class="footer-content">
+            <p>&copy; 2026 MiauDota — Projeto Acadêmico Front-End. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
