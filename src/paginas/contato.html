@@ -68,36 +68,30 @@
 
         <section id="formulario">
             <h2>Envie sua mensagem</h2>
+            <p>Mande uma mensagem sobre algum assunto que deseja falar.</p>
+            <div class="card-form">
             <form action="">
-                <p><label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required placeholder="Como você se chama?"></p>
-
-                <p><label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com"></p>
-
-                <p><label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000"></p>
-                <label for="assunto">Selecione um assunto:</label>
-                <select id="assunto" name="assunto" required>
-                    <option value="adocao">Dúvidas sobre adoção</option>
-                    <option value="voluntario">Quero ser voluntário(a)</option>
-                    <option value="lar-temporario">Quero ser lar temporário</option>
-                    <option value="apadrinhar">Quero apadrinhar ou doar</option>
-                    <option value="imprensa">Imprensa e parcerias</option>
-                    <option value="outro">Outro assunto</option>
-                </select>
-                
-                <!--Feito no Javascript, adicionando contador de caracteres-->
-                <p><label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="1" required maxlength="500"></textarea></p>
-                <p style="font-size: small;">Caracteres: <span id="contador">500</span>/500</p>
-                
-                <p><label for="termos">Concordo em compartilhar meus dados para que a MiauDota responda à minha mensagem</label>
-                <input type="checkbox" id="termos" name="termos" required></p>
-                <button type="submit">Enviar</button>
+                <p class="form-campo"><label for="nome">Nome:</label></p>
+                <div class="form-campo">
+                <input type="text" id="nome" name="nome" required placeholder="Como você se chama?">
+                </div>
+                <p class="form-campo"><label for="email">E-mail:</label></p>
+                <div class="form-campo">
+                <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com">
+                </div>
+                <p class="form-campo"><label for="telefone">Telefone:</label></p>
+                <div class="form-campo">
+                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+                </div>
+                <!--acho interessante colocar aqui um contador de caracteres no campo “Mensagem” (por exemplo, “0/500”), usando o JavaScript-->
+                <div  class="form-campo">
+                <p><label for="mensagem">Mensagem:</label></p>
+                </div>
+                <textarea id="mensagem" name="mensagem" rows="1" required placeholder="Escolha um assunto"></textarea>
+                <button type="submit" class="botao-decorativo">Enviar</button>
             </form>
+            </div>
         </section>
-
         <section id="card-caminho">
             <h3>Quer algo específico?</h3>
             <p>Separamos os caminhos mais procurados para você chegar mais rápido.</p>
@@ -130,17 +124,17 @@
             <h3>Nossa casa é a sua casa</h3>
             <p>Estamos na Vila Mariana, em São Paulo, e adoramos receber visitas. Para a sua segurança e a dos gatinhos, as visitas acontecem com agendamento. Assim, alguém da equipe pode te receber com calma e apresentar quem está esperando um lar.</p>
             <h4>Dados:</h4>
-            <ul>
+            <ul style="list-style: none;">
                 <li>Endereço: Rua dos Gatinhos, 120, Vila Mariana, São Paulo, SP, CEP 04000-000</li>
                 <li>Visitas (com agendamento): terça a sexta, das 14h às 18h; sábados, das 10h às 16h</li>
                 <li>Atendimento por WhatsApp e e-mail: segunda a sexta, das 9h às 18h</li>
                 <li>Fechado: domingos e feriados</li>
             </ul>
             <h4>Dicas para a visita:</h4>
-            <ul>
+            <ul style="list-style: none;">
                 <li>Chegue com 10 minutos de antecedência.</li>
                 <li>Venha com roupas confortáveis, porque você pode ganhar pelos de presente.</li>
-                <li>Lave as mãos antes e depois de mexer nos gatos.</li>
+                <li>Lave as mãos antes e depois de entrar em contato com os gatos.</li>
                 <li>Leve um documento com foto se a visita for para adotar.</li>
             </ul>
             </div>
@@ -149,22 +143,10 @@
             </div>
         </section>
 
-        <section id="perguntas">
-            <h3>Respostas rápidas</h3>
-            <p class="resposta">1. Em quanto tempo vocês respondem?</p>
-            <div class="mostrarResposta">Em até 2 dias úteis. O WhatsApp costuma ser mais rápido, mas por favor tenha paciência: somos uma equipe voluntária.</div>
-            <p class="resposta">2. Preciso agendar para visitar?</p>
-            <div class="mostrarResposta">Sim. As visitas são com horário marcado para garantir que alguém da equipe te receba e para não estressar os gatinhos.</div>
-            <p class="resposta">3. Vocês fazem resgate de gatos abandonados?</p>
-            <div class="mostrarResposta">Fazemos, de acordo com a nossa capacidade e com prioridade para casos de risco. Entre em contato pelo WhatsApp com fotos e a localização, e avaliamos como ajudar.</div>
-            <p class="resposta">4. Posso levar um gato que encontrei na rua?</p>
-            <div class="mostrarResposta">Antes de trazer, fale com a gente. Podemos orientar sobre os primeiros cuidados e verificar se temos vaga ou lar temporário disponível.</div>
-        </section>
-
-        <section id="final">
+        <section id="final" >
             <h3>Todo gato começa com uma conversa</h3>
             <p>Seja para adotar, ajudar ou só dizer um oi, a gente adora ouvir você.</p>
-            <a href="/src/paginas/adocao.html">Ver gatos disponíveis</a>
+            <a class="botao-decorativo" href="/src/paginas/adocao.html">Ver gatos disponíveis</a>
         </section>
     </main>
 
