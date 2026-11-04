@@ -40,12 +40,13 @@ section {
     flex: 1;
     display: flex;
     box-shadow: 12px 0px 8px 8px var(--cor-sombra);
+    border-radius: 0px 30px 30px 0px;
+    overflow: hidden;
 }
 .caixa-imagem > img {
     max-width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: 0px 30px 30px 0px; 
+    object-fit: cover; 
 }
 
 /* segunda seção */
@@ -199,4 +200,67 @@ section {
     margin: 0 auto 40px;
     line-height: 1.6;
     position: relative;
+}
+
+/* quinta seção */
+#gatos-disponiveis{
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 10rem auto 0 auto;
+    align-items: flex-start;
+    border-radius: 40px;
+    padding: 40px 30px 40px 30px;
+    background-color: var(--cor-cards);
+    position: relative;
+    
+}
+#gatos-disponiveis > h3 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 18px;
+    color: var(--cor-titulos);
+}
+#gatos-disponiveis > p{
+    max-width: 640px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* Ultima seção */
+#entrar-contato{
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    margin: 10rem auto 0 auto;
+    border-radius: 40px;
+    padding: 60px 50px 80px 50px;
+    background-color: transparent;
+    position: relative; 
+}
+#entrar-contato::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background-color: var(--cor-fundo-segundario);
+    z-index: -1;
+}
+#entrar-contato > .caixa-texto{
+    flex: 0.5;
+    box-shadow: 0px 0px 0px 0px;
+}
+.caixa-form{
+    font-size: 1.6rem;
+    text-align: center;
+    flex: 1;
+    background-color: var(--cor-sombra);
+    border-radius: 0px 40px 40px 0px;
+}
+.caixa-form > form > label, .caixa-form > form > input {
+    margin: 20px auto 0px auto;
+    display: flex;
+    color: var(--cor-titulos);
 }
