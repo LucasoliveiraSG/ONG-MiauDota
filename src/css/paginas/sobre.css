@@ -20,13 +20,7 @@ p {
     color: var(--cor-texto);
 }
 
-{
-    background-color: var(--cor-fundo-suave);
-    text-align: center;
-    padding: 60px 20px;
-    border-radius: var(--raio);
-    margin-bottom: 40px;
-}
+
 
 .botao {
     display: inline-block;
