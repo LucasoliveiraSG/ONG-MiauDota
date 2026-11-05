@@ -110,6 +110,7 @@ footer{
     color: var(--cor-fundo-suave);
     font-family: var(--fonte-principal);
     transition: transform 0.2s ease-in-out;
+    border: none;
 }
 .botao-decorativo:hover{
     transform: scale(1.1);
