@@ -1,5 +1,5 @@
 // Validação do formulário
-const form = document.getElementById("formulario");
+const form = document.querySelector("#formulario form");
 const feedback = document.getElementById("feedback");
 const msg = document.getElementById("mensagem");
 

@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato | MiauDota</title>
-    <link rel="stylesheet" href="/src/css/paginas/contato.css">
-    <script src="/src/js/paginas/contato.js" defer></script>
+    <link rel="stylesheet" href="../css/paginas/contato.css">
+    <script src="../js/paginas/contato.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-hamburguer"><span></span></label>
             <ul>
-                <a href="/index.html">
-                    <img src="/src/assets/imagens/MiauDota.png" alt="Logo da MiauDota">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../assets/imagens/MiauDota.png" alt="Logo da MiauDota" class="logo-img">
                 </a>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/src/paginas/sobre.html">Sobre</a></li>
-                <li><a href="/src/paginas/adocao.html">Adoção</a></li>
-                <li><a href="/src/paginas/contato.html" id="contato">Contato</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="adocao.html">Adoção</a></li>
+                <li><a href="contato.html" id="contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -88,6 +90,8 @@
                 <p><label for="mensagem">Mensagem:</label></p>
                 </div>
                 <textarea id="mensagem" name="mensagem" rows="1" required placeholder="Escolha um assunto"></textarea>
+                <small><span id="contador">0</span>/500</small>
+                <p id="feedback"></p>
                 <button type="submit" class="botao-decorativo">Enviar</button>
             </form>
             </div>

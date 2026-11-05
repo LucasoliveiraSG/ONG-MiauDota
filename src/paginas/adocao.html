@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gatos para Adoção | MiauDota</title>
-    <link rel="stylesheet" href="/src/css/paginas/adocao.css">
-    <script src="/src/js/paginas/adocao.js" defer></script>
+    <link rel="stylesheet" href="../css/paginas/adocao.css">
+    <script src="../js/paginas/adocao.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-hamburguer"><span></span></label>
             <ul>
-                <a href="/index.html">
-                    <img src="/src/assets/imagens/MiauDota.png" alt="Logo da MiauDota">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../assets/imagens/MiauDota.png" alt="Logo da MiauDota" class="logo-img">
                 </a>
-                <li><a href="/index.html">Inicio</a></li>
-                <li><a href="/src/paginas/sobre.html">Sobre</a></li>
-                <li><a href="/src/paginas/adocao.html" id="adocao">Adoção</a></li>
-                <li><a href="/src/paginas/contato.html">Contato</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="adocao.html" id="adocao">Adoção</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -154,7 +156,9 @@
                 </select></p>
 
                 <p><label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="1" required></textarea></p>
+                <textarea id="mensagem" name="mensagem" rows="1" required placeholder="Gostaria de saber alguma coisa sobre o gatinho?"></textarea></p>
+                <small><span id="contador">0</span>/500</small>
+                <p id="feedback"></p>
                 <button type="submit" class="botao-decorativo">Enviar</button>
 
             </form>

@@ -32,7 +32,6 @@ p {
     flex-direction: column;
     justify-content: space-between;
 }
- 
 .card h3, .card h4 {
     margin-bottom: 12px;
 }
@@ -175,3 +174,45 @@ blockquote {
     font-size: 1rem;
     font-weight: 500;
 }
+@media (max-width: 768px){
+    h2{
+        font-size: 1.8rem;
+        margin-top: 35px;
+    }
+    p{
+        padding: 0 16px;
+    }
+    .card p,
+    .marco p{
+        padding: 0;
+    }
+    #nossa-historia,
+    #linha-do-tempo,
+    #missao-visao-valores{
+        padding: 10px;
+    }
+    #numeros{
+        padding: 10px 10px 40px 10px;
+    }
+    blockquote{
+        font-size: 1.1rem;
+        margin: 25px 16px;
+        padding: 10px 15px;
+    }
+    .marco{
+        padding: 18px;
+    }
+    .cards-principais{
+        grid-template-columns: 1fr;
+    }
+    .cards-valores{
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+    .cards-numeros{
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+    .card .numero{
+        font-size: 2.2rem;
+    }
+}
+

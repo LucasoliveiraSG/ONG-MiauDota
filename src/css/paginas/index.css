@@ -318,3 +318,60 @@ section {
     border-color: var(--cor-texto);
     box-shadow: 0 0 0 4px rgba(242, 140, 56, 0.35);
 }
+@media (max-width: 900px){
+    #introducao{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .caixa-texto{
+        padding: 30px 20px;
+        border-radius: 30px 30px 0 0;
+    }
+    .caixa-imagem{
+        border-radius: 0 0 30px 30px;
+        box-shadow: 0px 8px 8px 8px var(--cor-sombra);
+    }
+    .caixa-imagem > img{
+        width: 100%;
+    }
+    #encontre-amigo{
+        flex-direction: column;
+        margin-top: 5rem;
+        padding: 40px 20px 50px 20px;
+    }
+    .caixa-gato-curioso{
+        padding: 0 10px 30px 10px;
+    }
+    #como-adotar{
+        margin-top: 5rem;
+        padding: 40px 20px;
+    }
+    #como-adotar > ol{
+        padding: 0;
+    }
+    #gatos-disponiveis{
+        margin: 5rem 16px 0 16px;
+        width: auto;
+        padding: 30px 16px;
+    }
+    #entrar-contato{
+        margin-top: 5rem;
+        padding: 40px 20px 50px 20px;
+    }
+    .contato-form{
+        padding: 24px 18px;
+    }
+}
+ 
+@media (max-width: 480px){
+    #por-que-adotar{
+        padding: 40px 16px;
+    }
+    #por-que-adotar ul{
+        grid-template-columns: 1fr;
+    }
+    .caixa-texto > p,
+    .caixa-gato-curioso > p{
+        margin-bottom: 25px;
+    }
+}
