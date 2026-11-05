@@ -1,1 +1,399 @@
 @import url('global.css');
+/* primeira seção */
+
+#banner{
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 10rem auto 0 auto;
+    border-radius: 40px;
+    padding: 60px 50px 65px 50px;
+    background-color: transparent;
+    position: relative;
+}
+#banner h3 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 16px;
+    color: var(--cor-titulos);
+}
+#banner > p{
+    max-width: 640px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+#banner > .botao-decorativo:hover{
+    transform: none;
+}
+
+/* segunda seção */
+#antes-adotar {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    margin: 6rem auto 0 auto;
+    padding: 60px 40px;
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+}
+#antes-adotar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background-color: var(--cor-fundo-segundario);
+    z-index: -1;
+}
+
+#antes-adotar h3 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 16px;
+    color: var(--cor-titulos);
+}
+
+/* Primeiro parágrafo (texto explicativo) */
+#antes-adotar > p:nth-of-type(1) {
+    max-width: 640px;
+    margin: 0 auto 28px auto;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+/* Subtítulo "Faça uma pausa..." */
+#antes-adotar > label {
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--cor-titulos);
+    margin-bottom: 20px;
+}
+
+/* Segundo parágrafo (bloco com os checkboxes) */
+#antes-adotar > p:nth-of-type(2) {
+    max-width: 580px;
+    margin: 0 auto 32px auto;
+    padding: 28px 32px;
+    background-color: #ffffff;
+    border-radius: var(--raio);
+    border: 2px dashed var(--cor-titulos);
+    text-align: left; /* Alinha as caixinhas perfeitamente à esquerda */
+    line-height: 2.4;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Estiliza a caixinha do checkbox com a cor do site */
+#antes-adotar input[type="checkbox"] {
+    accent-color: var(--cor-titulos);
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Último parágrafo (chamada final) */
+#antes-adotar > p:nth-of-type(3) {
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--cor-texto);
+    background-color: var(--cor-cards);
+    padding: 14px 24px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+/* terceira seção */
+#gatos{
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 10rem auto 0 auto;
+    border-radius: 40px;
+    padding: 60px 50px 65px 50px;
+    background-color: transparent;
+    position: relative;
+}
+#gatos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background-color: var(--cor-fundo-segundario);
+    z-index: -1;
+}
+#gatos h3 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 16px;
+    color: var(--cor-titulos);
+}
+#gatos > p{
+    max-width: 640px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 760px;
+    margin: 0 auto;
+}
+.cards > .card {
+    flex: 0 0 calc(50% - 16px); /* Mantém 2 por linha */
+    position: relative; /* Permite posicionar o selo de sexo por cima da foto */
+    margin: 0;
+    padding: 0; /* Zera o padding para a foto encostar nas bordas do topo */
+    background: #ffffff;
+    border-radius: 28px;
+    overflow: hidden; /* Corta os cantos superiores da foto acompanhando a curva */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0; /* Sobrescreve o gap: 24px do global.css */
+}
+.card > img{
+    width: 100%;
+    max-width: 100%; /* Sobrescreve o max-width: 200px antigo */
+    height: 300px;
+    object-fit: cover;
+    margin: 0;
+    display: block;
+}
+.cards > .card h4 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--cor-texto);
+    margin: 22px 0 10px 24px;
+    text-align: left;
+}
+.cards > .card > p:nth-of-type(1) {
+    background-color: #efefef;
+    color: #666666;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin: 22px 24px 10px 0;
+}
+.cards > .card > p:nth-of-type(2) {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: var(--cor-titulos);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin: 0;
+}
+.cards > .card > .botao-decorativo {
+    width: 100%;
+    margin: 12px 24px 24px 24px;
+    padding: 12px;
+    background-color: transparent;
+    color: var(--cor-titulos);
+    border: 2px solid var(--cor-titulos);
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.cards > .card > .botao-decorativo:hover {
+    background-color: var(--cor-titulos);
+    color: #ffffff;
+    transform: none;
+    box-shadow: none;
+}
+
+/* parte do quero adotar */
+#formulario{
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 10rem auto 0 auto;
+    border-radius: 40px;
+    padding: 60px 50px 65px 50px;
+    background-color: transparent;
+    position: relative;
+}
+#formulario h3 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 16px;
+    color: var(--cor-titulos);
+}
+#formulario > p{
+    max-width: 640px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+.gato-form {
+    display: grid;
+    gap: 20px;
+    padding: 40px;
+    text-align: left;
+    background: #e4d1b5;
+    border-radius: 24px;
+    box-shadow: 0 12px 32px var(--cor-sombra);
+}
+.gato-campo {
+    display: grid;
+    gap: 8px;
+    margin: 10px;
+}
+
+.gato-campo label {
+    font-weight: 700;
+    color: #d07994;
+}
+.gato-form input,
+.gato-form textarea,
+.gato-form select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 16px;
+    font: inherit;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    background: var(--cor-fundo-suave);
+    border: 1px solid #8f8882;
+    border-radius: var(--raio);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gato-form textarea {
+    min-height: 140px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.gato-form ::placeholder {
+    color: #c74279;
+    opacity: 0.30;
+}
+
+.gato-form input:hover,
+.gato-form textarea:hover,
+.gato-form select:hover {
+    border-color: var(--cor-texto);
+}
+
+.gato-form input:focus-visible,
+.gato-form textarea:focus-visible{
+    outline: none;
+    border-color: var(--cor-texto);
+    box-shadow: 0 0 0 4px rgba(242, 140, 56, 0.35);
+}
+
+/* parte como funciona */
+#como-funciona {
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    margin: 8rem auto 0 auto;
+    padding: 40px 20px;
+    font-family: var(--fonte-principal);
+}
+
+#como-funciona h3 {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 40px;
+    color: var(--cor-titulos);
+}
+
+#como-funciona ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#como-funciona li {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background-color: var(--cor-fundo-suave);
+    color: var(--cor-texto);
+    padding: 22px 28px;
+    border-radius: var(--raio);
+    box-shadow: 0 4px 14px var(--cor-sombra);
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.05rem;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#como-funciona li:hover {
+    transform: translateX(6px);
+    background-color: var(--cor-cards);
+}
+
+/* parte o que esperamos de você */
+#requisitos {
+    max-width: 1000px;
+    width: 100%;
+    margin: 8rem auto 0 auto;
+    padding: 40px 20px;
+    font-family: var(--fonte-principal);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Cria 2 colunas iguais */
+    column-gap: 32px;
+    row-gap: 0;
+}
+
+/* Título principal ocupando as 2 colunas no topo */
+#requisitos > h3 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin-bottom: 40px;
+    color: var(--cor-titulos);
+}
+
+/* Cabeçalhos dos cartões ("O que pedimos" e "O que oferecemos") */
+#requisitos > h4 {
+    background-color: var(--cor-cards);
+    color: var(--cor-texto);
+    font-size: 1.3rem;
+    padding: 24px 32px 16px 32px;
+    border-radius: 24px 24px 0 0; /* Arredonda apenas o topo */
+    text-align: left;
+    border-bottom: 2px dashed var(--cor-titulos);
+}
+
+#requisitos > p {
+    background-color: var(--cor-fundo-suave);
+    color: var(--cor-texto);
+    padding: 24px 32px 32px 32px;
+    border-radius: 0 0 24px 24px; /* Arredonda apenas a base */
+    box-shadow: 0 8px 24px var(--cor-sombra);
+    text-align: left;
+    line-height: 2.2;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* Posiciona "O que oferecemos" na coluna 2 (Direita) */
+#requisitos > h4:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: var(--cor-titulos); /* Destaca a coluna da MiauDota em rosa */
+    color: #ffffff;
+}
+#requisitos > p:nth-of-type(2) {
+    grid-column: 2;
+    grid-row: 3;
+}

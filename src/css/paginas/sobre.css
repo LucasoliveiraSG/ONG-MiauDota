@@ -21,72 +21,7 @@ p {
     line-height: 1.6;
 }
 
-.subtitulo, .fechamento {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: var(--cor-texto);
-    opacity: 0.9;
-}
 
-header {
-    background-color: var(--cor-fundo-suave);
-    box-shadow: 0 2px 4px var(--cor-sombra);
-    padding: 10px 0;
-}
-
-header nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    list-style: none;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.logo-img {
-    max-height: 50px;
-    width: auto;
-    display: block;
-    box-shadow: none;
-    border-radius: 0;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    color: var(--cor-texto);
-    font-family: var(--fonte-principal);
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-header nav ul li a:hover, header nav ul li a.active {
-    color: var(--cor-principal);
-}
-
-#banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/imagens/banner-sobre.jpg') no-repeat center center/cover;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    padding: 20px;
-}
-
-#banner h2 {
-    color: #ffffff;
-    margin-top: 0;
-}
-
-#banner p {
-    color: #ffffff;
-    text-align: center;
-    font-size: 1.2rem;
-}
 
 .botao {
     display: inline-block;
