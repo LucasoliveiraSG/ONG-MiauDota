@@ -24,11 +24,13 @@
 
     <main>
         <section id="banner">
-            <h3>Seu novo melhor amigo está esperando por você!</h3>
+            <div class="card">
+                <h3>Seu novo melhor amigo está esperando por você!</h3>
 
-            <p>Conheça os gatos que estão na MiauDota e descubra com quem a sua rotina combina. Adotar é um ato de amor, a gente caminha com você em cada passo.</p>
+                <p>Conheça os gatos que estão na MiauDota e descubra com quem a sua rotina combina. Adotar é um ato de amor, a gente caminha com você em cada passo.</p>
 
-            <a href="#gatos">Ver gatos disponíveis</a>
+                <a href="#gatos" class="botao-decorativo">Ver gatos disponíveis</a>
+            </div>
         </section>
 
         <section id="antes-adotar">
@@ -45,63 +47,37 @@
 
             <p>Respondeu “sim” para tudo? Então vamos conhecer os seus futuros companheiros.</p>
         </section>
-
-        <section id="filtro">
-            <h3>Encontre o gato ideal para você</h3>
-
-            <p>Use os filtros para achar quem combina com o seu jeito de viver.</p>
-
-            <form action="">
-                <label for="idade">Idade:</label>
-                <select name="idade" id="idade">
-                    <option value="todos">Todos</option>
-                    <option value="filhote">Filhote (0-1 ano)</option>
-                    <option value="adulto">Adulto (1-7 anos)</option>
-                    <option value="idoso">Idoso (7+ anos)</option>
-                </select>
-
-                <label for="sexo">Sexo:</label>
-                <select name="sexo" id="sexo">
-                    <option value="todos">Todos</option>
-                    <option value="macho">Macho</option>
-                    <option value="femea">Fêmea</option>
-                </select>
-
-                <label for="porte">Porte:</label>
-                <select name="porte" id="porte">
-                    <option value="todos">Todos</option>
-                    <option value="pequeno">Pequeno</option>
-                    <option value="medio">Médio</option>
-                    <option value="grande">Grande</option>
-                </select>
-
-                <button type="submit">Filtrar</button>
-            </form>
-        </section>
-        
         <section id="gatos">
             <h3>Gatos disponíveis para adoção</h3>
-
-            <div class="gato">
-                <img src="https://i.pinimg.com/236x/5b/3c/e1/5b3ce1acb5e668487e32956f385f6c5b.jpg" alt="Gato 1">
-                <h4>Nome do Gato 1</h4>
-                <p>Idade: ? anos</p>
-                <p>Sexo: Macho</p>
-                <p>Porte: Médio</p>
-                <p>Estado: Saudável</p>
-                <p>bio: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, sit fuga impedit sed sunt mollitia voluptate exercitationem ab cupiditate doloribus, quasi dolor aliquid nemo, fugit cum ea nihil deleniti vel.</p>
-                <button>Adotar</button>
-            </div>
-
-            <div class="gato">
-                <img src="https://i.pinimg.com/236x/5b/3c/e1/5b3ce1acb5e668487e32956f385f6c5b.jpg" alt="Gato 2">
-                <h4>Nome do Gato 2</h4>
-                <p>Idade: ? anos</p>
-                <p>Sexo: Fêmea</p>
-                <p>Porte: Pequeno</p>
-                <p>Estado: Saudável</p>
-                <p>bio: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, sit fuga impedit sed sunt mollitia voluptate exercitationem ab cupiditate doloribus, quasi dolor aliquid nemo, fugit cum ea nihil deleniti vel.</p>
-                <button>Adotar</button>
+            <div class="cards">
+                <div class="card">
+                    <img src="../assets/imagens/gataogato.jpeg" alt="Gato 1">
+                    <h4>Gatão</h4>
+                    <p>Idade: 5 anos</p>
+                    <p>Sexo: Macho</p>
+                    <a href="#formulario" class="botao-decorativo">Adotar</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/imagens/luanagata.jpeg" alt="Gato 2">
+                    <h4>Luana</h4>
+                    <p>Idade: 5 anos</p>
+                    <p>Sexo: Fêmea</p>
+                    <a href="#formulario" class="botao-decorativo">Adotar</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/imagens/nikogato.jpeg" alt="Gato 3">
+                    <h4>Niko</h4>
+                    <p>Idade: ? anos</p>
+                    <p>Sexo: Fêmea</p>
+                    <a href="#formulario" class="botao-decorativo">Adotar</a>
+                </div>
+                <div class="card">
+                    <img src="../assets/imagens/pingogato.jpeg" alt="Gato 4">
+                    <h4>Pingo</h4>
+                    <p>Idade: 3 anos</p>
+                    <p>Sexo: Fêmea</p>
+                    <a href="#formulario" class="botao-decorativo">Adotar</a>
+                </div>
             </div>
 
             <!-- Mais gatos serão adicionados aqui -->
@@ -139,62 +115,33 @@
                 Apoio a qualquer hora, por WhatsApp ou e-mail <br>
             </p>
         </section>
-
-        <section id="perguntas-frequentes">
-            <h3>Ainda tem dúvidas?</h3>
-            <div class="resposta-duvida">
-                <h4>1.Adotar custa alguma coisa?</h4>
-                <p>Não. A adoção é gratuita. Se você quiser, pode fazer uma contribuição voluntária, que ajuda a resgatar e cuidar de outros gatos.</p>
-            </div>
-            <div class="resposta-duvida">
-                <h4>2. Moro em apartamento. Posso adotar?</h4>
-                <p>Pode, sim! Muitos gatos vivem muito bem em apartamentos. Só pedimos telas de proteção em todas as janelas e varandas, por segurança.</p>
-            </div>
-            <div class="resposta-duvida">
-                <h4>3. Já tenho outros animais. Posso adotar mesmo assim?</h4>
-                <p>Pode. Conte no formulário quais animais moram com você, assim indicamos um gato com perfil compatível e orientamos a apresentação entre eles.</p>
-            </div>
-
-            <div class="resposta-duvida">
-                <h4>4. Posso adotar mais de um gato?</h4>
-                <p>Pode, desde que você tenha condições de cuidar bem de todos. Alguns dos nossos gatos até vivem melhor em dupla.</p>
-            </div>
-
-            <div class="resposta-duvida">
-                <h4>5. E se eu não conseguir mais ficar com o gato?</h4>
-                <p>Você nunca precisa abandoná-lo. Entre em contato e ele volta para a MiauDota, sem julgamentos. Queremos que ele fique seguro.</p>
-            </div>
-        </section>
         
         <section id="formulario">
             <h3>Quero adotar</h3>
             <p>Preencha com calma. Quanto mais soubermos sobre você, mais fácil encontrar o gato certo. Respondemos em até 2 dias úteis.</p>
+            <div class="gato-form">
+                <form action="">
+                    <div class="gato-campo"><label for="nome">Nome:</label></div>
+                    <div class="gato-campo"><input type="text" id="nome" name="nome" required placeholder="Como você se chama?"></div>
 
-            <form action="">
-                <p><label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required placeholder="Como você se chama?"></p>
+                    <div class="gato-campo"><label for="email">E-mail:</label></div>
+                    <div class="gato-campo"><input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com"></div>
 
-                <p><label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required placeholder="seuemail@exemplo.com"></p>
+                    <div class="gato-campo"><label for="telefone">Telefone:</label></div>
+                    <div class="gato-campo"><input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000"></div>
 
-                <p><label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000"></p>
+                    <div class="gato-campo"><label for="gato">Gato de interesse:</label></div>
+                    <select name="gato" id="gato">
+                        <option value="gato1">Gato 1</option>
+                        <option value="gato2">Gato 2</option>
+                        <option value="gato3">Gato 3</option>
+                    </select>
 
-                <p><label for="gato">Gato de interesse:</label>
-                <select name="gato" id="gato">
-                    <option value="gato1">Gato 1</option>
-                    <option value="gato2">Gato 2</option>
-                    <option value="gato3">Gato 3</option>
-                </select></p>
-
-                <p><label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="1" required></textarea></p>
-                
-                <p><label for="termos">Li e concordo com os termos de adoção:</label>
-                <input type="checkbox" id="termos" name="termos" required></p>
-                <button type="submit">Enviar</button>
-
-            </form>
+                    <div class="gato-campo"><label for="mensagem">Mensagem:</label></div>
+                    <div class="gato-campo"><textarea id="mensagem" name="mensagem" rows="1" required></textarea></div>
+                    <button type="submit" class="botao-decorativo">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
 

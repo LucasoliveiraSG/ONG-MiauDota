@@ -227,27 +227,17 @@ section {
 }
 
 /* Ultima seção */
-#entrar-contato{
-    max-width: 800px;
-    width: 100%;
-    display: flex;
-    margin: 10rem auto 0 auto;
-    border-radius: 40px;
-    padding: 60px 50px 80px 50px;
-    background-color: transparent;
+#entrar-contato {
     position: relative;
-    --contato-painel: var(--cor-texto, #3a2e28);          /* fundo do painel escuro */
-    --contato-destaque: var(--cor-principal, #f28c38);    /* título sobre fundo escuro */
-    --contato-destaque-escuro: #b45309;                   /* botão e links sobre fundo claro */
-    --contato-destaque-hover: #92400e;
-    --contato-fundo: var(--cor-fundo-suave, #fff4e8);
-    --contato-campo-fundo: #f8f8f8;
-    --contato-borda: #8f8882;
-    --contato-texto-suave: #6b645e;
-    --contato-erro: #b42318;
-    --contato-raio: 24px;
+    max-width: 800px;
+    margin: 10rem auto 0;
+    padding: 60px 50px 80px;
+    text-align: center;
+    color: var(--cor-texto);
 }
-#entrar-contato::after{
+
+/* Faixa de fundo na largura da tela, atrás da seção */
+#entrar-contato::after {
     content: "";
     position: absolute;
     top: 0;
@@ -258,101 +248,82 @@ section {
     background-color: var(--cor-fundo-segundario);
     z-index: -1;
 }
-.contato-geral{
-    display: grid;
-    grid-template-columns: minmax(0, 47fr) minmax(0, 53fr);
-    max-width: 1000px;
-    margin: 0 auto;
-    overflow: hidden;
-    background: #fff;
-    padding: 64px 16px;
-    background: transparent;
+
+/* Título com traço rosa embaixo */
+#entrar-contato h3 {
+    margin: 0 0 12px;
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    color: var(--cor-texto);
 }
-.contato-cartao{
-    display: flex;
-    flex-direction: column;
-    padding: 48px 40px;
-    background: var(--contato-painel);
-    color: var(--cor-titulos);    
-    border-radius: 24px 0px 0px 24px;
+
+#entrar-contato h3::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 4px;
+    margin: 12px auto 0;
+    background: var(--cor-titulos);
+    border-radius: 2px;
 }
-.contato-assunto > h3{
-    margin: 0 0 32px;
-    font-size: clamp(1.5rem, 3vw, 1.9rem);
-    font-weight: 800;
-    line-height: 1.2;
-    color: var(--cor-titulos);
+
+#entrar-contato > p {
+    max-width: 560px;
+    margin: 0 auto 32px;
+    line-height: 1.6;
 }
-.contato-assunto > p{
-    display: grid;
-    gap: 28px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+
 .contato-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: grid;
     gap: 20px;
-    padding: 48px 40px;
+    padding: 40px;
+    text-align: left;
     background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 12px 32px var(--cor-sombra);
 }
+
 .contato-campo {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 8px;
 }
+
 .contato-campo label {
-    font-size: 0.95rem;
     font-weight: 700;
-    color: var(--contato-painel);
 }
-.contato-form input, .contato-form textarea {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 14px 16px;
-    font: inherit;
-    font-size: 1rem;                  /* 16px evita zoom automático no iPhone */
-    color: var(--contato-painel);
-    background: var(--contato-campo-fundo);
-    border: 1px solid var(--contato-borda);
-    border-radius: 14px;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
-}
+
 .contato-form input,
 .contato-form textarea {
     box-sizing: border-box;
     width: 100%;
     padding: 14px 16px;
     font: inherit;
-    font-size: 1rem;                  /* 16px evita zoom automático no iPhone */
-    color: var(--contato-painel);
-    background: var(--contato-campo-fundo);
-    border: 1px solid var(--contato-borda);
-    border-radius: 14px;
-    transition: border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.contato-form input::placeholder, .contato-form textarea::placeholder {
-    color: var(--contato-texto-suave);
-    opacity: 1;                       /* o Firefox deixa o placeholder transparente */
-}
-
-.contato-form input:hover, .contato-form textarea:hover {
-    border-color: var(--contato-painel);
-}
-
-/* Foco: mantém o contorno (acessibilidade) e muda a borda */
-.contato-form input:focus-visible, .contato-form textarea:focus-visible {
-    background: #fff;
-    border-color: var(--contato-destaque-escuro);
-    outline: 3px solid rgba(180, 83, 9, 0.35);
-    outline-offset: 2px;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    background: var(--cor-fundo-suave);
+    border: 1px solid #8f8882;
+    border-radius: var(--raio);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contato-form textarea {
     min-height: 140px;
     line-height: 1.5;
-    resize: vertical;                 /* ninguém quebra o layout arrastando de lado */
+    resize: vertical;
+}
+
+.contato-form ::placeholder {
+    color: var(--cor-texto);
+    opacity: 0.75;
+}
+
+.contato-form input:hover,
+.contato-form textarea:hover {
+    border-color: var(--cor-texto);
+}
+
+.contato-form input:focus-visible,
+.contato-form textarea:focus-visible {
+    outline: none;
+    border-color: var(--cor-texto);
+    box-shadow: 0 0 0 4px rgba(242, 140, 56, 0.35);
 }
