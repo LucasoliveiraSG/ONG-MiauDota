@@ -29,7 +29,7 @@ section {
 .caixa-texto h3 {
     font-size: clamp(1.6rem, 4vw, 2.2rem);
     margin-bottom: 16px;
-    color: v (--cor-titulos);
+    color: var(--cor-titulos);
 }
 .caixa-texto > p {
     max-width: 640px;
@@ -153,13 +153,7 @@ section {
     display: block;
     margin-bottom: 12px;
     font-size: 2.2rem;
-    -webkit-mask-image: url("/src/assets/imagens/cat.svg");
-    mask-image: url("/src/assets/imagens/cat.svg");
 }
-
-#por-que-adotar li:nth-child(1)::before { content: "🐾"; }
-#por-que-adotar li:nth-child(2)::before { content: "💛"; }
-#por-que-adotar li:nth-child(3)::before { content: "🌟"; }
 
 /* quarta seção */
 #como-adotar{
@@ -236,7 +230,6 @@ section {
     color: var(--cor-texto);
 }
 
-/* Faixa de fundo na largura da tela, atrás da seção */
 #entrar-contato::after {
     content: "";
     position: absolute;
@@ -248,8 +241,6 @@ section {
     background-color: var(--cor-fundo-segundario);
     z-index: -1;
 }
-
-/* Título com traço rosa embaixo */
 #entrar-contato h3 {
     margin: 0 0 12px;
     font-size: clamp(1.6rem, 4vw, 2.2rem);

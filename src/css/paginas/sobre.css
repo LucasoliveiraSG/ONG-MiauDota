@@ -1,17 +1,16 @@
 @import url('global.css');
-
 h2, h3, h4 {
     text-align: center;
     color: var(--cor-titulos);
     font-family: var(--fonte-principal);
 }
-
+ 
 h2 {
     font-size: 2.2rem;
     margin-top: 50px;
     margin-bottom: 25px;
 }
-
+ 
 p {
     text-align: justify;
     max-width: 800px;
@@ -20,129 +19,10 @@ p {
     color: var(--cor-texto);
     line-height: 1.6;
 }
-
-
-
-.botao {
-    display: inline-block;
-    background-color: var(--cor-principal);
-    color: var(--cor-fundo-suave);
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: var(--raio);
-    font-weight: bold;
-    margin-top: 20px;
-    box-shadow: 0 4px 6px var(--cor-sombra);
-    transition: transform 0.2s, opacity 0.3s;
-}
-
-.botao:hover {
-    opacity: 0.9;
-    transform: translateY(-2px);
-}
-
-#nossa-historia {
-    padding: 20px;
-}
-
-figure {
-    text-align: center;
-    margin: 30px 0;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: var(--raio);
-    box-shadow: 0 4px 8px var(--cor-sombra);
-}
-
-figcaption {
-    font-family: var(--fonte-principal);
-    font-size: 0.9rem;
-    color: var(--cor-texto);
-    margin-top: 8px;
-    font-style: italic;
-}
-
-blockquote {
-    font-style: italic;
-    font-size: 1.4rem;
-    color: var(--cor-principal);
-    text-align: center;
-    border-left: 4px solid var(--cor-principal);
-    padding: 10px 20px;
-    margin: 40px auto;
-    max-width: 600px;
-    background-color: var(--cor-fundo-secundario);
-    border-radius: 0 var(--raio) var(--raio) 0;
-}
-
-#linha-do-tempo {
-    max-width: 900px;
+#banner{
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-}
-
-.marcos {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.marco {
-    background-color: var(--cor-fundo-secundario);
-    padding: 25px;
-    border-radius: var(--raio);
-    border-left: 5px solid var(--cor-principal);
-    box-shadow: 0 2px 4px var(--cor-sombra);
-}
-
-.marco time {
-    font-weight: bold;
-    color: var(--cor-principal);
-    font-size: 1.3rem;
-    font-family: var(--fonte-principal);
-}
-
-.marco h3 {
-    text-align: left;
-    margin: 10px 0 5px 0;
-}
-
-.marco p {
-    margin: 0;
-    text-align: left;
-}
-
-#missao-visao-valores {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.cards-principais {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    margin-bottom: 40px;
-}
-
-.cards-valores {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    margin: 25px 0;
-}
-
-#valores h3 {
-    margin-top: 30px;
-}
-
+} 
 .card {
     background-color: var(--cor-cards);
     padding: 25px;
@@ -152,22 +32,121 @@ blockquote {
     flex-direction: column;
     justify-content: space-between;
 }
-
+ 
 .card h3, .card h4 {
     margin-bottom: 12px;
 }
-
+ 
 .card p {
     font-size: 0.95rem;
     margin: 0;
 }
-
+ 
+/* ===== Nossa história ===== */
+#nossa-historia {
+    padding: 20px;
+}
+ 
+figure {
+    text-align: center;
+    margin: 30px 0;
+}
+ 
+figcaption {
+    font-family: var(--fonte-principal);
+    font-size: 0.9rem;
+    color: var(--cor-texto);
+    margin-top: 8px;
+    font-style: italic;
+}
+ 
+blockquote {
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--cor-principal);
+    text-align: center;
+    border-left: 4px solid var(--cor-principal);
+    padding: 10px 20px;
+    margin: 40px auto;
+    max-width: 600px;
+    background-color: var(--cor-fundo-segundario);
+    border-radius: 0 var(--raio) var(--raio) 0;
+}
+ 
+/* ===== Linha do tempo ===== */
+#linha-do-tempo {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+ 
+.marcos {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+.marco {
+    background-color: var(--cor-fundo-segundario);
+    padding: 25px;
+    border-radius: var(--raio);
+    border-left: 5px solid var(--cor-principal);
+    box-shadow: 0 2px 4px var(--cor-sombra);
+}
+ 
+.marco time {
+    font-weight: bold;
+    color: var(--cor-principal);
+    font-size: 1.3rem;
+    font-family: var(--fonte-principal);
+}
+ 
+.marco h3 {
+    text-align: left;
+    margin: 10px 0 5px 0;
+}
+ 
+.marco p {
+    margin: 0;
+    text-align: left;
+}
+ 
+/* ===== Missão, visão e valores ===== */
+#missao-visao-valores {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+ 
+.cards-principais {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 40px;
+}
+ 
+#valores h3 {
+    margin-top: 30px;
+}
+ 
+.cards-valores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 25px 0;
+}
+ 
+/* ===== Números ===== */
 #numeros {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px 20px 60px 20px;
 }
-
+ 
 .cards-numeros {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -175,12 +154,12 @@ blockquote {
     list-style: none;
     padding: 0;
 }
-
+ 
 .cards-numeros .card {
     text-align: center;
     align-items: center;
 }
-
+ 
 .card .numero {
     display: block;
     font-size: 2.8rem;
@@ -189,23 +168,10 @@ blockquote {
     text-align: center;
     font-family: var(--fonte-principal);
 }
-
+ 
 .cards-numeros .card span {
     font-family: var(--fonte-principal);
     color: var(--cor-texto);
     font-size: 1rem;
     font-weight: 500;
-}
-
-footer {
-    background-color: var(--cor-fundo-secundario);
-    padding: 25px;
-    text-align: center;
-    border-top: 1px solid var(--cor-sombra);
-}
-
-.footer-content p {
-    text-align: center;
-    font-size: 0.9rem;
-    margin: 0;
 }

@@ -105,8 +105,8 @@
     display: inline-block;
 }
 
-/* terceira seção */
-#gatos{
+/* terceira seção, parte de adoções */
+#gatos {
     max-width: 1200px;
     width: 100%;
     text-align: center;
@@ -116,6 +116,7 @@
     background-color: transparent;
     position: relative;
 }
+
 #gatos::before {
     content: "";
     position: absolute;
@@ -127,79 +128,44 @@
     background-color: var(--cor-fundo-segundario);
     z-index: -1;
 }
+
 #gatos h3 {
     font-size: clamp(1.6rem, 4vw, 2.2rem);
     margin-bottom: 16px;
     color: var(--cor-titulos);
 }
-#gatos > p{
+
+#gatos > p {
     max-width: 640px;
     margin: 0 auto 40px;
     line-height: 1.6;
 }
-.cards{
+
+.cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
-    max-width: 760px;
+    justify-content: center;
+    gap: 24px;
+    max-width: 680px;
     margin: 0 auto;
 }
+
 .cards > .card {
-    flex: 0 0 calc(50% - 16px); /* Mantém 2 por linha */
-    position: relative; /* Permite posicionar o selo de sexo por cima da foto */
-    margin: 0;
-    padding: 0; /* Zera o padding para a foto encostar nas bordas do topo */
-    background: #ffffff;
-    border-radius: 28px;
-    overflow: hidden; /* Corta os cantos superiores da foto acompanhando a curva */
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0; /* Sobrescreve o gap: 24px do global.css */
+    flex: 0 0 calc(50% - 12px); /* Mantém 2 cards por linha */
+    margin: 0; /* Zera a margem de 20px do global.css */
+    gap: 12px; /* Deixa o nome, idade, sexo e botão mais próximos */
 }
-.card > img{
+
+.card > img {
     width: 100%;
-    max-width: 100%; /* Sobrescreve o max-width: 200px antigo */
-    height: 300px;
-    object-fit: cover;
-    margin: 0;
-    display: block;
-}
-.cards > .card h4 {
-    font-size: 1.35rem;
-    font-weight: 700;
-    color: var(--cor-texto);
-    margin: 22px 0 10px 24px;
-    text-align: left;
-}
-.cards > .card > p:nth-of-type(1) {
-    background-color: #efefef;
-    color: #666666;
-    font-size: 0.8rem;
-    font-weight: 600;
-    padding: 5px 12px;
-    border-radius: 20px;
-    margin: 22px 24px 10px 0;
-}
-.cards > .card > p:nth-of-type(2) {
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    background-color: var(--cor-titulos);
-    color: #ffffff;
-    font-size: 0.8rem;
-    font-weight: 700;
-    padding: 6px 14px;
-    border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-    margin: 0;
+    height: 240px;
+    object-fit: cover; /* Mantém todas as fotos do mesmo tamanho sem distorcer */
+    border-radius: 12px;
+    margin: 0 auto;
 }
 .cards > .card > .botao-decorativo {
     width: 100%;
-    margin: 12px 24px 24px 24px;
+    margin: 12px auto 24px auto;
     padding: 12px;
     background-color: transparent;
     color: var(--cor-titulos);
@@ -213,7 +179,7 @@
 .cards > .card > .botao-decorativo:hover {
     background-color: var(--cor-titulos);
     color: #ffffff;
-    transform: none;
+    transform: none; /* Evita que o botão salte para fora do card */
     box-shadow: none;
 }
 
