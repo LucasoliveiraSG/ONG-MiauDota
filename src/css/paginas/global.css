@@ -175,3 +175,91 @@ footer {
     padding-top: 20px;
     margin-top: 10px;
 }
+#menu-toggle{
+    display: none;
+}
+.menu-hamburguer{
+    display: none;
+}
+ 
+@media (max-width: 900px){
+    nav{
+        justify-content: flex-start;
+        padding: 0 20px;
+    }
+    .menu-hamburguer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1001;
+    }
+    .menu-hamburguer span,
+    .menu-hamburguer span::before,
+    .menu-hamburguer span::after{
+        content: "";
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: var(--cor-titulos);
+        border-radius: 2px;
+        position: absolute;
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+    .menu-hamburguer span::before{
+        transform: translateY(-9px);
+    }
+    .menu-hamburguer span::after{
+        transform: translateY(9px);
+    }
+    #menu-toggle:checked + .menu-hamburguer span{
+        background-color: transparent;
+    }
+    #menu-toggle:checked + .menu-hamburguer span::before{
+        transform: rotate(45deg);
+    }
+    #menu-toggle:checked + .menu-hamburguer span::after{
+        transform: rotate(-45deg);
+    }
+ 
+    nav > ul{
+        display: none;
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 0;
+        background-color: #fef9f6;
+        box-shadow: 0 8px 12px var(--cor-sombra);
+    }
+    #menu-toggle:checked ~ ul{
+        display: flex;
+    }
+    nav > ul > li > a{
+        margin: 0;
+        font-size: 1.3rem;
+    }
+    nav > ul > a > img{
+        margin: 0;
+    }
+}
+ 
+@media (max-width: 768px){
+    body{
+        margin-right: 0;
+    }
+    .final{
+        padding: 30px 20px 20px 20px;
+        gap: 25px;
+        border-radius: 30px 30px 0 0;
+    }
+    footer{
+        padding: 0 10px;
+    }
+}

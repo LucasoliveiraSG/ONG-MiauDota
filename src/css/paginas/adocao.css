@@ -1,6 +1,6 @@
 @import url('global.css');
 /* primeira seção */
-
+ 
 #banner{
     max-width: 800px;
     width: 100%;
@@ -24,7 +24,7 @@
 #banner > .botao-decorativo:hover{
     transform: none;
 }
-
+ 
 /* segunda seção */
 #antes-adotar {
     max-width: 800px;
@@ -46,13 +46,13 @@
     background-color: var(--cor-fundo-segundario);
     z-index: -1;
 }
-
+ 
 #antes-adotar h3 {
     font-size: clamp(1.6rem, 4vw, 2.2rem);
     margin-bottom: 16px;
     color: var(--cor-titulos);
 }
-
+ 
 /* Primeiro parágrafo (texto explicativo) */
 #antes-adotar > p:nth-of-type(1) {
     max-width: 640px;
@@ -60,7 +60,7 @@
     line-height: 1.6;
     font-size: 1.05rem;
 }
-
+ 
 /* Subtítulo "Faça uma pausa..." */
 #antes-adotar > label {
     display: inline-block;
@@ -69,7 +69,7 @@
     color: var(--cor-titulos);
     margin-bottom: 20px;
 }
-
+ 
 /* Segundo parágrafo (bloco com os checkboxes) */
 #antes-adotar > p:nth-of-type(2) {
     max-width: 580px;
@@ -83,7 +83,7 @@
     font-weight: 500;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
-
+ 
 /* Estiliza a caixinha do checkbox com a cor do site */
 #antes-adotar input[type="checkbox"] {
     accent-color: var(--cor-titulos);
@@ -92,7 +92,7 @@
     margin-right: 10px;
     cursor: pointer;
 }
-
+ 
 /* Último parágrafo (chamada final) */
 #antes-adotar > p:nth-of-type(3) {
     margin: 0 auto;
@@ -104,7 +104,7 @@
     border-radius: 30px;
     display: inline-block;
 }
-
+ 
 /* terceira seção, parte de adoções */
 #gatos {
     max-width: 1200px;
@@ -116,7 +116,7 @@
     background-color: transparent;
     position: relative;
 }
-
+ 
 #gatos::before {
     content: "";
     position: absolute;
@@ -128,19 +128,19 @@
     background-color: var(--cor-fundo-segundario);
     z-index: -1;
 }
-
+ 
 #gatos h3 {
     font-size: clamp(1.6rem, 4vw, 2.2rem);
     margin-bottom: 16px;
     color: var(--cor-titulos);
 }
-
+ 
 #gatos > p {
     max-width: 640px;
     margin: 0 auto 40px;
     line-height: 1.6;
 }
-
+ 
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -149,13 +149,13 @@
     max-width: 680px;
     margin: 0 auto;
 }
-
+ 
 .cards > .card {
     flex: 0 0 calc(50% - 12px); /* Mantém 2 cards por linha */
     margin: 0; /* Zera a margem de 20px do global.css */
     gap: 12px; /* Deixa o nome, idade, sexo e botão mais próximos */
 }
-
+ 
 .card > img {
     width: 100%;
     height: 240px;
@@ -182,7 +182,7 @@
     transform: none; /* Evita que o botão salte para fora do card */
     box-shadow: none;
 }
-
+ 
 /* parte do quero adotar */
 #formulario{
     max-width: 1200px;
@@ -218,7 +218,7 @@
     gap: 8px;
     margin: 10px;
 }
-
+ 
 .gato-campo label {
     font-weight: 700;
     color: #d07994;
@@ -237,31 +237,31 @@
     border-radius: var(--raio);
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
-
+ 
 .gato-form textarea {
     min-height: 140px;
     line-height: 1.5;
     resize: vertical;
 }
-
+ 
 .gato-form ::placeholder {
     color: #c74279;
     opacity: 0.30;
 }
-
+ 
 .gato-form input:hover,
 .gato-form textarea:hover,
 .gato-form select:hover {
     border-color: var(--cor-texto);
 }
-
+ 
 .gato-form input:focus-visible,
 .gato-form textarea:focus-visible{
     outline: none;
     border-color: var(--cor-texto);
     box-shadow: 0 0 0 4px rgba(242, 140, 56, 0.35);
 }
-
+ 
 /* parte como funciona */
 #como-funciona {
     max-width: 900px;
@@ -271,13 +271,13 @@
     padding: 40px 20px;
     font-family: var(--fonte-principal);
 }
-
+ 
 #como-funciona h3 {
     font-size: clamp(1.6rem, 4vw, 2.2rem);
     margin-bottom: 40px;
     color: var(--cor-titulos);
 }
-
+ 
 #como-funciona ul {
     list-style: none;
     padding: 0;
@@ -287,7 +287,7 @@
     flex-direction: column;
     gap: 20px;
 }
-
+ 
 #como-funciona li {
     display: flex;
     align-items: center;
@@ -302,12 +302,12 @@
     font-size: 1.05rem;
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
+ 
 #como-funciona li:hover {
     transform: translateX(6px);
     background-color: var(--cor-cards);
 }
-
+ 
 /* parte o que esperamos de você */
 #requisitos {
     max-width: 1000px;
@@ -320,7 +320,7 @@
     column-gap: 32px;
     row-gap: 0;
 }
-
+ 
 /* Título principal ocupando as 2 colunas no topo */
 #requisitos > h3 {
     grid-column: 1 / -1;
@@ -329,25 +329,25 @@
     margin-bottom: 40px;
     color: var(--cor-titulos);
 }
-
+ 
 /* Cabeçalhos dos cartões ("O que pedimos" e "O que oferecemos") */
 #requisitos > h4 {
     background-color: var(--cor-cards);
     color: var(--cor-texto);
     font-size: 1.3rem;
     padding: 24px 32px 16px 32px;
-    border-radius: 24px 24px 0 0; /* Arredonda apenas o topo */
-    text-align: left;
+    border-radius: 24px 24px 0 0; 
+    text-align: center;
     border-bottom: 2px dashed var(--cor-titulos);
 }
-
+ 
 #requisitos > p {
     background-color: var(--cor-fundo-suave);
     color: var(--cor-texto);
     padding: 24px 32px 32px 32px;
-    border-radius: 0 0 24px 24px; /* Arredonda apenas a base */
+    border-radius: 0 0 24px 24px;
     box-shadow: 0 8px 24px var(--cor-sombra);
-    text-align: left;
+    text-align: center;
     line-height: 2.2;
     font-size: 1rem;
     font-weight: 500;
@@ -356,10 +356,108 @@
 #requisitos > h4:nth-of-type(2) {
     grid-column: 2;
     grid-row: 2;
-    background-color: var(--cor-titulos); /* Destaca a coluna da MiauDota em rosa */
+    background-color: var(--cor-titulos);
     color: #ffffff;
 }
 #requisitos > p:nth-of-type(2) {
     grid-column: 2;
     grid-row: 3;
+}
+ 
+ 
+@media (max-width: 768px) {
+ 
+    html,
+    body {
+        overflow-x: hidden;
+    }
+    #banner,
+    #gatos,
+    #formulario {
+        margin-top: 6rem;
+        padding: 40px 20px 45px 20px;
+        border-radius: 24px;
+    }
+    #antes-adotar {
+        margin-top: 4rem;
+        padding: 40px 20px;
+    }
+    #antes-adotar > p:nth-of-type(2) {
+        padding: 20px;
+        line-height: 2;
+    }
+    .cards {
+        max-width: 100%;
+        gap: 16px;
+    }
+ 
+    .cards > .card {
+        flex: 0 0 calc(50% - 8px); 
+    }
+ 
+    .card > img {
+        height: 180px;
+    }
+    .gato-form {
+        padding: 24px 16px;
+    }
+ 
+    .gato-campo {
+        margin: 0;
+    }
+    #como-funciona {
+        margin-top: 5rem;
+        padding: 40px 16px;
+    }
+ 
+    #como-funciona li {
+        padding: 18px 20px;
+        gap: 14px;
+        font-size: 1rem;
+    }
+ 
+    #como-funciona li:hover {
+        transform: none;
+    }
+    #requisitos {
+        margin-top: 5rem;
+        padding: 40px 16px;
+        grid-template-columns: 1fr;
+    }
+ 
+    #requisitos > h4:nth-of-type(2),
+    #requisitos > p:nth-of-type(2) {
+        grid-column: auto;
+        grid-row: auto;
+    }
+ 
+    #requisitos > h4:nth-of-type(2) {
+        margin-top: 28px;
+    }
+ 
+    #requisitos > h4 {
+        padding: 20px 20px 14px 20px;
+    }
+ 
+    #requisitos > p {
+        padding: 20px 20px 26px 20px;
+        line-height: 2;
+    }
+}
+@media (max-width: 480px) {
+ 
+    .cards > .card {
+        flex: 0 0 100%;
+    }
+ 
+    .card > img {
+        height: 220px;
+    }
+ 
+    #banner,
+    #gatos,
+    #formulario {
+        margin-top: 5rem;
+        padding: 32px 16px 36px 16px;
+    }
 }
