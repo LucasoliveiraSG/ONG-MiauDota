@@ -1,28 +1,34 @@
 @import url('global.css');
 
+/* caixa do gatinho inicio */
+
+/* criação da caixinha com a foto do gato  */
 #vamos-conversar{
     box-sizing: border-box;
     width: 70%;
     padding: 100px;
-    margin:100px auto ;
+    margin:200px auto 200px auto ;
     background-color: var(--cor-cards);
-    border-radius: 10px;
-    box-shadow: 0px 0px 8px 8px rgb(206, 203, 203);
+    border-radius: 30px 0px 0px 30px; 
+    box-shadow: 0px 0px 8px 8px var(--cor-sombra);
     position:relative;
     overflow:hidden;
 }
 
+/* altera a h3 dentro da caixinha  */
 #vamos-conversar >h3{
-    font-size: 30px;
-    margin: 10px;
+    font-size: 40px;
+    margin: 0px auto 30px auto;
     color: var(--cor-titulos);
 }
 
+/* altera o paragrafo dentro da caixinha  */
 #vamos-conversar >p{
     text-align: left;
     font-size: 15px;
     width: 40%; 
 }
+/* altera a imagem da caixinha */
 #vamos-conversar >img{
     position: absolute;
     right:-5px;
@@ -32,48 +38,64 @@
     object-fit: contain; 
 }
 
+/* centraliza o texto que ta antes do card */
 #canais-contato{
     
     text-align: center;
 }
 
+/* centraliza contatos e o card caminho também lado a lado */
 .cards{
     display:flex;
    text-align: center; 
+   
 }
 
-#card-whatsapp{
-    background-color: rgb(201, 105, 208);
+#card{
+    box-shadow: 8px 0px 8px;
 }
 
-#card-whatsapp >h4, #card-whatsapp >p{
- color: white;
+#card-whatsapp, #cardwhatsapp >p{
+    background-color: rgb(83, 167, 96);
+    color: beige;
 }
 
 #card-whatsapp >img{
     max-width: 60px;
-    margin-left:140px;
+    margin:0px auto 0px auto;
+
 }
 
-#card-email{
-    background-color: rgb(168, 95, 95);
+#card-email, #card-email >p{
+    background-color: rgb(194, 66, 66);
+    color: beige;
 }
+
 #card-email >img{
     max-width: 60px;
-    margin-left: 100px;
+    margin:0px auto 0px auto;
 }
-#card-instagram{
-    background-color: rgb(213, 173, 92);
+
+#card-instagram, #card-instagram >p{
+    background-color: rgb(220, 176, 87);
+    color: beige;
 }
+
 
 #card-instagram >img{
     max-width: 40px;
-    margin-left: 114px;
+    margin:0px auto 0px auto;
 }
+
+#visita-card,#visita-card >p{
+    background-color: rgb(89, 135, 175);
+    color: beige;
+}
+
 
 #visita-card >img{
     max-width: 40px;
-    margin-left: 129px
+    margin:0px auto 0px auto;
 }
 
 
@@ -84,16 +106,160 @@
     width: 100%;
     text-align: center;
     margin: 10rem auto 0 auto;
-    border-radius: 40px;
     padding: 10px 10px 10px 10px;
     position: relative;
     margin-bottom: 70px;
+    border-radius: 30px; 
+    box-shadow: 0px 0px 8px 8px var(--cor-sombra);
 }
-form >p, form >label{
-    color: var(--cor-titulos);
+
+    #formulario label{
+    color: #d07994;
 }
+
 #formulario h2{
     margin-bottom: 40px;
+    color: var(--cor-titulos);
+}
+
+#formulario p{
+    color: var(--cor-titulos);
+}
+
+.card-form{
+    display: grid;
+    gap: 20px;
+    padding: 40px;
+    text-align: left;
+    background: #e4d1b5;
+    border-radius: 24px;
+    box-shadow: 0 12px 32px var(--cor-sombra);
+}
+
+.card-campo{
+    display: grid;
+    gap: 8px;
+}
+
+.card-campo label{
+    font-weight: 700;
+}
+
+.card-form input, .card-form textarea{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 16px;
+    font: inherit;
+    font-size: 1rem;
+    color: var(--cor-texto);
+    background: var(--cor-fundo-suave);
+    border: 1px solid #8f8882;
+    border-radius: var(--raio);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-form textarea{
+    min-height: 140px;
+    line-height: 1,5;
+
+}
+
+.card-form ::placeholder{
+    color: #c74279;
+    opacity: 0.30;
+}
+
+.card-form{
+    color: rgb(179, 91, 23);
+    margin: 40px auto 40px auto;
+}
+
+.card-form input:focus-visible, .card-form textarea:focus-visible{
+    outline: none;
+    border-color: rgb(173, 124, 75);
+    box-shadow: 0 0 0 1px; color: rgb(180, 90, 16);
+}
+
+.botao-decorativo{
+    border: none;
+}
+
+#card-caminho{
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    margin: 10rem auto 0 auto;
+    border-radius: 40px;
+    padding: 60px 50px 65px 50px;
+    background-color: transparent;
+    position: relative;
+    color: rgb(171, 135, 100);
+}
+
+#card-caminho::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    background-color: var(--cor-fundo-segundario);
+    z-index: -1;
+}
+
+#canais-contato >h3{
+    color: var(--cor-titulos);
+    margin-bottom: 20px;
+    
+}
+
+#canais-contato >p{
+    color: var(--cor-titulos);
+    
+}
+
+#visitar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;                
+    max-width: 1100px;       
+    margin: 250px auto;       
+    padding: 40px 60px;
+    box-sizing: border-box;
+    background-color: rgb(233, 218, 173);
+    color: rgb(156, 84, 32);
+    border-radius:30px; 
+    box-shadow: 0px 0px 8px 8px var(--cor-sombra);
+}
+
+#visitar h3 , #visitar h4 {
+    font-size: 20px;
+    margin: 0 0 0px;
+    color: rgb(156, 84, 32);
+}
+
+#visitar p{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+#visitar ul{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+
+#perguntas{
+   
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+
+#final{
+    text-align: center;
     color: var(--cor-titulos);
 }
 
